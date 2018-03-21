@@ -8,6 +8,7 @@ import java.nio.file.Paths;
 import java.nio.charset.StandardCharsets;
 
 import org.apache.commons.io.IOUtils;
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONArray;
 
@@ -31,7 +32,7 @@ public class CardSpace implements BoardSpace {
 	 * @param config path to a config file with card information
 	 * @throws IOException indicates lack of resources, should bubble up to the top
 	 */
-	public CardSpace(String name, String config) throws IOException, FontFormatException {
+	public CardSpace(String name, String config) throws IOException, FontFormatException, JSONException {
 		this.name = name;
 		this.cards = parseConfig(config);
 
@@ -51,7 +52,7 @@ public class CardSpace implements BoardSpace {
 		}
 	}
 
-	private Card[] parseConfig(String path) throws IOException, FontFormatException {
+	private Card[] parseConfig(String path) throws IOException, FontFormatException, JSONException {
 		byte[] encoded = IOUtils.toByteArray(Resources.stream(path));
 		String data = new String(encoded, StandardCharsets.UTF_8);
 

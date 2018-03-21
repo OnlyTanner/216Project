@@ -1,6 +1,7 @@
 
 import org.apache.commons.io.IOUtils;
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -23,7 +24,7 @@ public class PropertyLoader {
      * @param configLoc location of the config file
      * @throws IOException config file was not found
      */
-    public static void init(String configLoc) throws IOException {
+    public static void init(String configLoc) throws IOException, JSONException {
         byte[] encoded = IOUtils.toByteArray(Resources.stream(configLoc));
         String data = new String(encoded, StandardCharsets.UTF_8);
 

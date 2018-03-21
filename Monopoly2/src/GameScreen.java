@@ -1,4 +1,6 @@
 
+import org.json.JSONException;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.ImageObserver;
@@ -39,7 +41,7 @@ public class GameScreen {
 
     private Card currCard;
 
-    public GameScreen(JFrame parent, int screenWidth, int screenHeight) throws IOException, FontFormatException {
+    public GameScreen(JFrame parent, int screenWidth, int screenHeight) throws IOException, FontFormatException, JSONException {
         this.screenWidth = screenWidth;
         this.screenHeight = screenHeight;
 

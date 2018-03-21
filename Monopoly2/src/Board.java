@@ -40,7 +40,7 @@ public class Board {
      * @param parentFrame the parent JFrame for user input
      * @throws IOException, FontFormatException lack of resources, this should bubble to the top
      */
-    public Board(int x, int y, String config, JFrame parentFrame) throws IOException, FontFormatException {
+    public Board(int x, int y, String config, JFrame parentFrame) throws IOException, FontFormatException, JSONException {
         this.x = x;
         this.origX = x;
         this.y = y;

@@ -42,7 +42,7 @@ public class TitleScreen {
         menues = new HashMap<>();
         currMenu = MenuType.MAIN;
 
-        logo = new Sprite("/images/logo.png");
+        logo = new Sprite("/resources/images/logo.png");
         logo.setX((screenWidth / 2) - (logo.getWidth() / 2));
         logo.setY((screenHeight / 3) - (logo.getHeight() / 2));
 

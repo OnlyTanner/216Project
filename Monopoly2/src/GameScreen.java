@@ -45,7 +45,7 @@ public class GameScreen {
         this.screenWidth = screenWidth;
         this.screenHeight = screenHeight;
 
-        board = new Board(140, 140, "/config/board.json", parent);
+        board = new Board(140, 140, "/resources/config/board.json", parent);
         BoardLuaLibrary.setBoard(board);
         players = new ArrayList<>();
 

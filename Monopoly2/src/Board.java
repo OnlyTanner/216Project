@@ -77,7 +77,7 @@ public class Board {
                 imageLoc = jsonSpace.getString("image");
             } catch(JSONException e) {
                 // Try to figure out the image name if it's not provided
-                imageLoc = "/images/spaces/" + name.replace(' ', '-').toLowerCase() + ".png";
+                imageLoc = "/resources/images/spaces/" + name.replace(' ', '-').toLowerCase() + ".png";
             }
 
             Sprite sprite = new Sprite(imageLoc);
@@ -85,7 +85,7 @@ public class Board {
             // Create the board space of the right type
             switch(type) {
                 case "no op":
-                    spaces[i] = new OneOpSpace(name, "/scripts/do-nothing.lua");
+                    spaces[i] = new OneOpSpace(name, "/resources/scripts/do-nothing.lua");
                     break;
                 case "property":
                     Property property = PropertyLoader.getProperty(name);

@@ -23,8 +23,8 @@ public class Notification {
         Notification.screenWidth = screenWidth;
         Notification.screenHeight = screenHeight;
 
-        background = Resources.getImage("/images/notification.png");
-        font = Resources.getFont("/fonts/kabel.ttf").deriveFont(16.0f);
+        background = Resources.getImage("/resources/images/notification.png");
+        font = Resources.getFont("/resources/fonts/kabel.ttf").deriveFont(16.0f);
 
         pos = -background.getHeight(null);
     }

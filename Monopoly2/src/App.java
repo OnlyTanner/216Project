@@ -51,7 +51,7 @@ public class App extends JFrame {
 
         mode = Mode.TITLE_SCREEN;
 
-        PropertyLoader.init("/config/properties.json");
+        PropertyLoader.init("/resources/config/properties.json");
         Notification.init(SCREEN_WIDTH, SCREEN_HEIGHT);
 
         titleScreen = new TitleScreen(this, SCREEN_WIDTH, SCREEN_HEIGHT);

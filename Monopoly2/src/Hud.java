@@ -16,10 +16,10 @@ public class Hud {
     private Font font;
 
     public Hud(int screenWidth, int screenHeight) throws IOException, FontFormatException {
-        leftTab = new Sprite(Resources.getImage("/images/hud-left.png"));
-        rightTab = new Sprite(Resources.getImage("/images/hud-right.png"));
+        leftTab = new Sprite(Resources.getImage("/resources/images/hud-left.png"));
+        rightTab = new Sprite(Resources.getImage("/resources/images/hud-right.png"));
         rightTab.setX(screenWidth - rightTab.getWidth());
-        font = Resources.getFont("/fonts/kabel.ttf").deriveFont(18.0f);
+        font = Resources.getFont("/resources/fonts/kabel.ttf").deriveFont(18.0f);
     }
 
     public void setCurrPlayer(Player player, int playerNum) {

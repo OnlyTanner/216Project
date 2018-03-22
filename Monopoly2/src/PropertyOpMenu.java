@@ -49,7 +49,7 @@ public class PropertyOpMenu {
         unMortgageButton.setY(mortgageButton.getY());
         parent.addMouseListener(unMortgageButton);
 
-        font = Resources.getFont("/fonts/kabel.ttf");
+        font = Resources.getFont("/resources/fonts/kabel.ttf");
     }
 
     public static void setPlayer(Player player) {

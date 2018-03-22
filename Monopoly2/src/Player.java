@@ -29,7 +29,7 @@ public class Player {
 
 	public Player(int tokenType) throws IOException {
 		this();
-		token = new Sprite("/images/tokens/" + tokenType + ".png");
+		token = new Sprite("/resources/images/tokens/" + tokenType + ".png");
 	}
 
 	public Sprite getSprite() {

@@ -63,8 +63,8 @@ public class Button implements MouseListener {
 		this.y = y;
 
 		// Load the button backgrounds
-		Image bg = Resources.getImage("/images/button.png");
-		Image bgPressed = Resources.getImage("/images/button-pressed.png");
+		Image bg = Resources.getImage("/resources/images/button.png");
+		Image bgPressed = Resources.getImage("/resources/images/button-pressed.png");
 
 		// Create a JLabel that will be used to construct the button images
 		JLabel label = new JLabel(new ImageIcon(bg));
@@ -72,7 +72,7 @@ public class Button implements MouseListener {
 		label.setHorizontalTextPosition(JLabel.CENTER);
 		label.setVerticalTextPosition(JLabel.CENTER);
 		label.setSize(bg.getWidth(null), bg.getHeight(null));
-		label.setFont(Resources.getFont("/fonts/kabel.ttf").deriveFont(fontSize));
+		label.setFont(Resources.getFont("/resources/fonts/kabel.ttf").deriveFont(fontSize));
 		label.setForeground(Color.white);
 
 		// Assemble the unpressed button look

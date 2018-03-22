@@ -42,7 +42,12 @@ public class Resources {
     }
 
     public static InputStream stream(String regPath) throws IOException {
-        return Resources.class.getResourceAsStream(regPath);
+        if (Resources.class.getResourceAsStream(regPath) != null)
+            return Resources.class.getResourceAsStream(regPath);
+        else {
+            File file = new File(regPath);
+            return new FileInputStream(file);
+        }
     }
 
     /**
@@ -58,8 +63,12 @@ public class Resources {
             return imageCache.get(regPath);
         }
 
-        imageCache.put(regPath, ImageIO.read(stream(regPath)));
-        return imageCache.get(regPath);
+        try {
+            imageCache.put(regPath, ImageIO.read(stream(regPath)));
+            return imageCache.get(regPath);
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     /**

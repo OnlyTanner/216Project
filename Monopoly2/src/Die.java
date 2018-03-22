@@ -16,7 +16,7 @@ public class Die {
     public Die() throws IOException {
         sprites = new Sprite[6];
         for(int i=0; i<6; i++) {
-            sprites[i] = new Sprite("/images/die/" + (i + 1) + ".png");
+            sprites[i] = new Sprite("/resources/images/die/" + (i + 1) + ".png");
         }
     }
 

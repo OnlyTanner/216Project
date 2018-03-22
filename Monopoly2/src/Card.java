@@ -35,11 +35,11 @@ public class Card {
 		BufferedImage image = new BufferedImage(300, 200, BufferedImage.TYPE_INT_ARGB);
 		Graphics2D g = image.createGraphics();
 		g.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-		g.setFont(Resources.getFont("/fonts/impact.ttf").deriveFont(24.0f));
-		g.drawImage(Resources.getImage("/images/card.png"), 0, 0, null);
+		g.setFont(Resources.getFont("/resources/fonts/impact.ttf").deriveFont(24.0f));
+		g.drawImage(Resources.getImage("/resources/images/card.png"), 0, 0, null);
 		g.setColor(Color.white);
 		g.drawString(deckName, 20, 30);
-		g.setFont(Resources.getFont("/fonts/roboto-bold.ttf").deriveFont(14.0f));
+		g.setFont(Resources.getFont("/resources/fonts/roboto-bold.ttf").deriveFont(14.0f));
 		drawString(g, description, 10, 50);
 		sprite = new Sprite(image);
 	}

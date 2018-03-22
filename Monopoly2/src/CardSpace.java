@@ -3,8 +3,6 @@ import java.awt.*;
 import java.awt.image.ImageObserver;
 import java.util.Random;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.nio.charset.StandardCharsets;
 
 import org.apache.commons.io.IOUtils;

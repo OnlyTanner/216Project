@@ -15,6 +15,6 @@
     <orderEntry type="library" name="java-json" level="project" />
     <orderEntry type="library" name="luaj-jse-3.0.1" level="project" />
     <orderEntry type="library" name="Lua Library" level="project" />
-    <orderEntry type="library" name="commons-io-2.6" level="project" />
+    <orderEntry type="library" name="commons-io-2.4" level="project" />
   </component>
 </module>

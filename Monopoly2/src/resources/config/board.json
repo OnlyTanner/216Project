@@ -1,5 +1,5 @@
 {
-	"centerImage": "/images/spaces/center-image.png",
+	"centerImage": "/resources/images/spaces/center-image.png",
 	"spaces": [
 		{
 			"type": "no op",
@@ -12,7 +12,7 @@
 		{
 			"type": "card",
 			"name": "Community Chest",
-			"config": "/config/community-chest.json"
+			"config": "/resources/config/community-chest.json"
 		},
 		{
 			"type": "property",
@@ -21,7 +21,7 @@
 		{
 			"type": "one op",
 			"name": "Income Tax",
-			"script": "/scripts/income-tax.lua"
+			"script": "/resources/scripts/income-tax.lua"
 		},
 		{
 			"type": "property",
@@ -34,7 +34,7 @@
 		{
 			"type": "card",
 			"name": "Chance",
-			"config": "/config/chance.json"
+			"config": "/resources/config/chance.json"
 		},
 		{
 			"type": "property",
@@ -47,7 +47,7 @@
 		{
 			"type": "jail",
 			"name": "Jail",
-			"script": "/scripts/do-nothing.lua"
+			"script": "/resources/scripts/do-nothing.lua"
 		},
 		{
 			"type": "property",
@@ -76,7 +76,7 @@
 		{
 			"type": "card",
 			"name": "Community Chest",
-			"config": "/config/community-chest.json"
+			"config": "/resources/config/community-chest.json"
 		},
 		{
 			"type": "property",
@@ -97,7 +97,7 @@
 		{
 			"type": "card",
 			"name": "Chance",
-			"config": "/config/chance.json"
+			"config": "/resources/config/chance.json"
 		},
 		{
 			"type": "property",
@@ -130,7 +130,7 @@
 		{
 			"type": "one op",
 			"name": "Go To Jail",
-			"script": "/scripts/go-to-jail.lua"
+			"script": "/resources/scripts/go-to-jail.lua"
 		},
 		{
 			"type": "property",
@@ -143,7 +143,7 @@
 		{
 			"type": "card",
 			"name": "Community Chest",
-			"config": "/config/community-chest.json"
+			"config": "/resources/config/community-chest.json"
 		},
 		{
 			"type": "property",
@@ -156,7 +156,7 @@
 		{
 			"type": "card",
 			"name": "Chance",
-			"config": "/config/chance.json"
+			"config": "/resources/config/chance.json"
 		},
 		{
 			"type": "property",
@@ -165,7 +165,7 @@
 		{
 			"type": "one op",
 			"name": "Luxury Tax",
-			"script": "/scripts/luxury-tax.lua"
+			"script": "/resources/scripts/luxury-tax.lua"
 		},
 		{
 			"type": "property",

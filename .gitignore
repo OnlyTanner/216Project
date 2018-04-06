@@ -1,5 +1,5 @@
 # ignore intellij files
-.idea/
+# .idea/
 
 # ignore compiled files
-out/
+# out/

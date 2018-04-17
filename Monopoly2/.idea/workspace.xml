@@ -2,150 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e08eecd5-0486-4410-8927-5e6e41aa5495" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/TestCardSpace.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/TestPlayer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/TestSprite.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/TestStandardProperty.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Monopoly2.iml" afterPath="$PROJECT_DIR$/Monopoly2.iml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/App$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/App$Mode.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/App.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/Board.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/BoardLuaLibrary$FixBoardPosFunction.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/BoardLuaLibrary$GetBoardSpaceFunction.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/BoardLuaLibrary$GetJailSpaceFunction.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/BoardLuaLibrary.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/BoardSpace.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/Button.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/Card.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/CardSpace.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/Die.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/GameScreen.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/Hud.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/ImageUtils.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/LuaLibrary$NotImplementedFunction.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/LuaLibrary$NotifyFunction.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/LuaLibrary$ScriptNotImplementedException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/LuaLibrary.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/Notification.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/OneOpSpace.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/Player.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/PlayerLuaLibrary$CountFunction.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/PlayerLuaLibrary$CurrPlayerFunction.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/PlayerLuaLibrary$GetHotelCntFunction.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/PlayerLuaLibrary$GetHouseCntFunction.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/PlayerLuaLibrary$GetPlayerPosFunction.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/PlayerLuaLibrary$GiveGetOutOfJailFreeCardFunction.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/PlayerLuaLibrary$GiveMoneyFunction.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/PlayerLuaLibrary$SendToJailFunction.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/PlayerLuaLibrary$SetPlayerPosFunction.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/PlayerLuaLibrary$TakeMoneyFunction.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/PlayerLuaLibrary.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/Property.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/PropertyLoader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/PropertyOpMenu.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/PropertySpace$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/PropertySpace$Ownership.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/PropertySpace.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/RailroadProperty.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/Resources.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/Sprite.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/StandardProperty.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/TitleScreen$MenuType.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/TitleScreen.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/UtilityProperty.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/advance-to-go.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/advance-to-go.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/back-3-spaces.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/back-3-spaces.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/bank-dividend.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/bank-dividend.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/bank-error.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/bank-error.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/beauty-contest.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/beauty-contest.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/birthday.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/birthday.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/boardwalk.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/boardwalk.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/building-loan.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/building-loan.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/chairman-of-the-board.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/chairman-of-the-board.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/consultancy-fee.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/consultancy-fee.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/crossword.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/crossword.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/doctors-fee.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/doctors-fee.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/general-repairs.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/general-repairs.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/go-to-jail.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/go-to-jail.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/holiday-fund.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/holiday-fund.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/hospital-fees.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/hospital-fees.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/illinois-ave.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/illinois-ave.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/income-tax-refund.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/income-tax-refund.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/income-tax.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/income-tax.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/inherit.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/inherit.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/jail-free.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/jail-free.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/life-insurance.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/life-insurance.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/luxury-tax.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/luxury-tax.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/nearest-railroad.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/nearest-railroad.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/nearest-utility.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/nearest-utility.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/opera-night.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/opera-night.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/poor-tax.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/poor-tax.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/reading-railroad.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/reading-railroad.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/school-fees.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/school-fees.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/st-charles-place.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/st-charles-place.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/stock.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/stock.lua" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/street-repairs.lua" afterPath="$PROJECT_DIR$/out/production/Monopoly2/resources/scripts/street-repairs.lua" />
-      <change beforePath="$PROJECT_DIR$/src/App.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Board.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/BoardLuaLibrary.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/BoardSpace.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Button.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Card.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/CardSpace.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Die.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/GameScreen.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Hud.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/ImageUtils.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/LuaLibrary.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Notification.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/OneOpSpace.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerLuaLibrary.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Property.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/PropertyLoader.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/PropertyOpMenu.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/PropertySpace.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/RailroadProperty.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Resources.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Sprite.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/StandardProperty.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/TitleScreen.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/UtilityProperty.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/advance-to-go.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/advance-to-go.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/back-3-spaces.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/back-3-spaces.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/bank-dividend.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/bank-dividend.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/bank-error.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/bank-error.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/beauty-contest.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/beauty-contest.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/birthday.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/birthday.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/boardwalk.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/boardwalk.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/building-loan.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/building-loan.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/chairman-of-the-board.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/chairman-of-the-board.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/consultancy-fee.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/consultancy-fee.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/crossword.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/crossword.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/doctors-fee.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/doctors-fee.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/general-repairs.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/general-repairs.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/go-to-jail.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/go-to-jail.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/holiday-fund.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/holiday-fund.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/hospital-fees.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/hospital-fees.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/illinois-ave.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/illinois-ave.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/income-tax-refund.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/income-tax-refund.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/income-tax.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/income-tax.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/inherit.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/inherit.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/jail-free.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/jail-free.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/life-insurance.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/life-insurance.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/luxury-tax.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/luxury-tax.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/nearest-railroad.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/nearest-railroad.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/nearest-utility.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/nearest-utility.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/opera-night.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/opera-night.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/poor-tax.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/poor-tax.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/reading-railroad.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/reading-railroad.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/school-fees.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/school-fees.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/st-charles-place.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/st-charles-place.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/stock.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/stock.lua" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scripts/street-repairs.lua" afterPath="$PROJECT_DIR$/src/resources/scripts/street-repairs.lua" />
+      <change beforePath="$PROJECT_DIR$/src/core/Player.java" afterPath="$PROJECT_DIR$/src/core/Player.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestPlayer.java" afterPath="$PROJECT_DIR$/src/test/TestPlayer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -156,12 +14,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Monopoly2$TestPlayer.coverage" NAME="TestPlayer Coverage Results" MODIFIED="1524005368301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Monopoly2$TestPlayer.coverage" NAME="TestPlayer Coverage Results" MODIFIED="1524006645272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.*</FILTER>
     </SUITE>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.45817307">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
@@ -176,20 +34,57 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/core/Player.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="646">
-                  <caret line="48" column="21" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="28" />
-                  <folding />
+                <state relative-caret-position="-1462">
+                  <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#682#683#0" expanded="true" />
+                    <element signature="e#701#702#0" expanded="true" />
+                    <element signature="e#783#784#0" expanded="true" />
+                    <element signature="e#818#819#0" expanded="true" />
+                    <element signature="e#849#850#0" expanded="true" />
+                    <element signature="e#874#875#0" expanded="true" />
+                    <element signature="e#1022#1023#0" expanded="true" />
+                    <element signature="e#1053#1054#0" expanded="true" />
+                    <element signature="e#1188#1189#0" expanded="true" />
+                    <element signature="e#1209#1210#0" expanded="true" />
+                    <element signature="e#1351#1352#0" expanded="true" />
+                    <element signature="e#1373#1374#0" expanded="true" />
+                    <element signature="e#1795#1796#0" expanded="true" />
+                    <element signature="e#1814#1815#0" expanded="true" />
+                    <element signature="e#1911#1912#0" expanded="true" />
+                    <element signature="e#1942#1943#0" expanded="true" />
+                    <element signature="e#2047#2048#0" expanded="true" />
+                    <element signature="e#2068#2069#0" expanded="true" />
+                    <element signature="e#2112#2113#0" expanded="true" />
+                    <element signature="e#2140#2141#0" expanded="true" />
+                    <element signature="e#2243#2244#0" expanded="true" />
+                    <element signature="e#2290#2291#0" expanded="true" />
+                    <element signature="e#2328#2329#0" expanded="true" />
+                    <element signature="e#2359#2360#0" expanded="true" />
+                    <element signature="e#2452#2453#0" expanded="true" />
+                    <element signature="e#2476#2477#0" expanded="true" />
+                    <element signature="e#2566#2567#0" expanded="true" />
+                    <element signature="e#2595#2596#0" expanded="true" />
+                    <element signature="e#2633#2634#0" expanded="true" />
+                    <element signature="e#2660#2661#0" expanded="true" />
+                    <element signature="e#2797#2798#0" expanded="true" />
+                    <element signature="e#2828#2829#0" expanded="true" />
+                    <element signature="e#2983#2984#0" expanded="true" />
+                    <element signature="e#3017#3018#0" expanded="true" />
+                    <element signature="e#3155#3156#0" expanded="true" />
+                    <element signature="e#3179#3180#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Sprite.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Sprite.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/core/Sprite.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
+                <state relative-caret-position="-745">
                   <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
                   <folding />
                 </state>
@@ -199,7 +94,7 @@
           <file leaf-file-name="RailroadProperty.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/core/RailroadProperty.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-7">
+                <state relative-caret-position="102">
                   <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
                   <folding />
                 </state>
@@ -273,15 +168,15 @@
           <file leaf-file-name="TestPlayer.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/TestPlayer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+                <state relative-caret-position="717">
+                  <caret line="149" column="43" lean-forward="true" selection-start-line="149" selection-start-column="43" selection-end-line="149" selection-end-column="43" />
                   <folding>
-                    <element signature="e#424#425#0" expanded="true" />
-                    <element signature="e#494#495#0" expanded="true" />
-                    <element signature="e#550#551#0" expanded="true" />
-                    <element signature="e#621#622#0" expanded="true" />
-                    <element signature="e#666#667#0" expanded="true" />
-                    <element signature="e#704#705#0" expanded="true" />
+                    <element signature="e#505#506#0" expanded="true" />
+                    <element signature="e#575#576#0" expanded="true" />
+                    <element signature="e#631#632#0" expanded="true" />
+                    <element signature="e#702#703#0" expanded="true" />
+                    <element signature="e#747#748#0" expanded="true" />
+                    <element signature="e#785#786#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -410,13 +305,14 @@
         <option value="$PROJECT_DIR$/src/Resources.java" />
         <option value="$PROJECT_DIR$/src/GameScreen.java" />
         <option value="$PROJECT_DIR$/src/Board.java" />
-        <option value="$PROJECT_DIR$/src/test/TestPlayer.java" />
         <option value="$PROJECT_DIR$/src/TestSprite.java" />
         <option value="$PROJECT_DIR$/src/TestPlayer.java" />
         <option value="$PROJECT_DIR$/src/TestCardSpace.java" />
         <option value="$PROJECT_DIR$/src/TestStandardProperty.java" />
         <option value="$PROJECT_DIR$/src/core/StandardProperty.java" />
         <option value="$PROJECT_DIR$/src/test/TestStandardProperty.java" />
+        <option value="$PROJECT_DIR$/src/core/Player.java" />
+        <option value="$PROJECT_DIR$/src/test/TestPlayer.java" />
       </list>
     </option>
   </component>
@@ -660,6 +556,9 @@
   </component>
   <component name="TestHistory">
     <history-entry file="TestPlayer - 2018.04.17 at 15h 49m 29s.xml">
+      <configuration name="TestPlayer" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestPlayer - 2018.04.17 at 16h 10m 46s.xml">
       <configuration name="TestPlayer" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -952,14 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="48" column="21" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/CardSpace.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -991,14 +882,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/RailroadProperty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1038,14 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Sprite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1109,17 +984,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Sprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-745">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/RailroadProperty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1462">
+          <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#1022#1023#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1188#1189#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
+            <element signature="e#1351#1352#0" expanded="true" />
+            <element signature="e#1373#1374#0" expanded="true" />
+            <element signature="e#1795#1796#0" expanded="true" />
+            <element signature="e#1814#1815#0" expanded="true" />
+            <element signature="e#1911#1912#0" expanded="true" />
+            <element signature="e#1942#1943#0" expanded="true" />
+            <element signature="e#2047#2048#0" expanded="true" />
+            <element signature="e#2068#2069#0" expanded="true" />
+            <element signature="e#2112#2113#0" expanded="true" />
+            <element signature="e#2140#2141#0" expanded="true" />
+            <element signature="e#2243#2244#0" expanded="true" />
+            <element signature="e#2290#2291#0" expanded="true" />
+            <element signature="e#2328#2329#0" expanded="true" />
+            <element signature="e#2359#2360#0" expanded="true" />
+            <element signature="e#2452#2453#0" expanded="true" />
+            <element signature="e#2476#2477#0" expanded="true" />
+            <element signature="e#2566#2567#0" expanded="true" />
+            <element signature="e#2595#2596#0" expanded="true" />
+            <element signature="e#2633#2634#0" expanded="true" />
+            <element signature="e#2660#2661#0" expanded="true" />
+            <element signature="e#2797#2798#0" expanded="true" />
+            <element signature="e#2828#2829#0" expanded="true" />
+            <element signature="e#2983#2984#0" expanded="true" />
+            <element signature="e#3017#3018#0" expanded="true" />
+            <element signature="e#3155#3156#0" expanded="true" />
+            <element signature="e#3179#3180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/TestPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="717">
+          <caret line="149" column="43" lean-forward="true" selection-start-line="149" selection-start-column="43" selection-end-line="149" selection-end-column="43" />
           <folding>
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
           </folding>
         </state>
       </provider>

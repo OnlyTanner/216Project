@@ -1,12 +1,16 @@
 package test;
 
 import core.Player;
+import core.Property;
+import core.StandardProperty;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.util.ArrayList;
 
 import static org.testng.Assert.assertEquals;
 
@@ -118,5 +122,31 @@ public class TestPlayer {
         } catch (Exception e) {
             
         }
+    }
+
+    @Test
+    public void testGetters() {
+        assertEquals(player1.getPlayerPos(), 0);
+        assertEquals(player1.get_money(), 1000);
+        assertEquals(player1.getTurnsLeftInJail(), 0);
+        assertEquals(player1.getGetOutOfJailFreeCards(), 0);
+        assertEquals(player1.getStillInGame(), true);
+    }
+
+    @Test
+    public void testTurnsLeftInJail() {
+        player1.setTurnsLeftInJail(5);
+        assertEquals(player1.getTurnsLeftInJail(), 5);
+        player1.setTurnsLeftInJail(-1); //invalid value
+        assertEquals(player1.getTurnsLeftInJail(), 5); //shouldn't change
+    }
+
+    @Test
+    public void testProperties() {
+        StandardProperty p = new StandardProperty("test", "blue", 50, new int[5], 10, 100, 500);
+        player1.addProperty(p);
+        ArrayList<Property> properties = player1.getProperties();
+        assertEquals(properties.size(), 1);
+        assertEquals(properties.get(0), p);
     }
 }

@@ -35,16 +35,6 @@ public class Player {
 		return token;
 	}
 
-	// setter and getter for name
-	public void set_name(String playerName)
-		{
-			name = playerName;
-		}
-	public String get_name()
-		{
-			return name;
-		}
-
 	// setter and getter for playerPos
 	public void setPlayerPos(int playerPos)
 		{

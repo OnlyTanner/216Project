@@ -1,6 +1,6 @@
-local player = require("PlayerLuaLibrary")
-local board = require("BoardLuaLibrary")
-local lib = require("LuaLibrary")
+local player = require("core.PlayerLuaLibrary")
+local board = require("core.BoardLuaLibrary")
+local lib = require("core.LuaLibrary")
 
 lastPos = player.getPlayerPos(player.currPlayer())
 player.setPlayerPos(player.currPlayer(), board.getBoardSpace("Reading Railroad"))

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Monopoly Test]">
+  <test thread-count="5" name="Class Tests(failed)">
+    <classes>
+      <class name="test.TestDie">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDownAfterClass"/>
+          <include name="setUpBeforeClass"/>
+          <include name="testGettersAndSetters"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.TestDie -->
+      <class name="test.TestCardSpace">
+        <methods>
+          <include name="setUp"/>
+          <include name="testGetName"/>
+          <include name="tearDownAfterClass"/>
+          <include name="tearDown"/>
+          <include name="testCardSprite"/>
+          <include name="setUpBeforeClass"/>
+          <include name="testCardCnt"/>
+          <include name="testDrawCard"/>
+        </methods>
+      </class> <!-- test.TestCardSpace -->
+      <class name="test.TestCard">
+        <methods>
+          <include name="setUpBeforeClass"/>
+          <include name="testGettersAndSetters"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDownAfterClass"/>
+        </methods>
+      </class> <!-- test.TestCard -->
+      <class name="test.TestSprite">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testSpriteManipulation"/>
+          <include name="testMiscSettersAndGetters"/>
+          <include name="setUpBeforeClass"/>
+          <include name="tearDownAfterClass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.TestSprite -->
+      <class name="test.TestPlayer">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testSetTurnsLeftInJail"/>
+          <include name="setUp"/>
+          <include name="tearDownAfterClass"/>
+          <include name="testSetPlayerPos"/>
+          <include name="testTakeMoney"/>
+          <include name="testTurnsLeftInJail"/>
+          <include name="setUpBeforeClass"/>
+          <include name="testGiveMoney"/>
+        </methods>
+      </class> <!-- test.TestPlayer -->
+    </classes>
+  </test> <!-- Class Tests(failed) -->
+</suite> <!-- Failed suite [Monopoly Test] -->

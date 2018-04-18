@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Monopoly Test">
+	<test name="Class Tests">
+		<classes>
+			<class name="test.TestCard"/>
+			<class name="test.TestCardSpace"/>
+			<class name="test.TestDie"/>
+			<class name="test.TestPlayer"/>
+			<class name="test.TestRailroadProperty"/>
+			<class name="test.TestSprite"/>
+			<class name="test.TestStandardProperty"/>
+			<class name="test.TestUtilityProperty"/>
+		</classes>
+	</test>
+</suite>

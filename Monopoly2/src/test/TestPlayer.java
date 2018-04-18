@@ -125,12 +125,17 @@ public class TestPlayer {
     }
 
     @Test
-    public void testGetters() {
-        assertEquals(player1.getPlayerPos(), 0);
-        assertEquals(player1.get_money(), 1000);
-        assertEquals(player1.getTurnsLeftInJail(), 0);
-        assertEquals(player1.getGetOutOfJailFreeCards(), 0);
-        assertEquals(player1.getStillInGame(), true);
+    public void testMiscSettersAndGetters() {
+        player1.setPlayerPos(5);
+        player1.set_money(1500);
+        player1.setTurnsLeftInJail(3);
+        player1.setGetOutOfJailFreeCardCnt(2);
+        player1.setStillInGame(false);
+        assertEquals(player1.getPlayerPos(), 5);
+        assertEquals(player1.get_money(), 1500);
+        assertEquals(player1.getTurnsLeftInJail(), 3);
+        assertEquals(player1.getGetOutOfJailFreeCards(), 2);
+        assertEquals(player1.getStillInGame(), false);
     }
 
     @Test

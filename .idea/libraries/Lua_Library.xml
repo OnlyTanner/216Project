@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Lua Library" type="Lua">
+  <library name="Lua Library">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/Monopoly2/lib/luaj-jse-3.0.1.jar" />
     </CLASSES>

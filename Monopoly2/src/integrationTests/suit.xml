@@ -1,0 +1,7 @@
+<suite name = "Suite">
+    <test name = "test">
+        <classes>
+            <class name = "PlayerTest2"/>
+        </classes>
+    </test>
+</suite>

@@ -59,7 +59,7 @@ public class TestPlayer {
         int tempPos = player1.getPlayerPos();
         try {
             player1.setPlayerPos(-1);
-            assertEquals(tempPos, player1.getPlayerPos()); //ensure the value didn't change
+            assertEquals(player1.getPlayerPos(), tempPos); //ensure the value didn't change
         } catch(Exception e) {
             Assert.fail("Unexpected exception.", e);
         }
@@ -67,7 +67,7 @@ public class TestPlayer {
         tempPos = player1.getPlayerPos();
         try {
             player1.setPlayerPos(40);
-            assertEquals(tempPos, player1.getPlayerPos()); //ensure the value didn't change
+            assertEquals(player1.getPlayerPos(), tempPos); //ensure the value didn't change
         } catch(Exception e) {
             Assert.fail("Unexpected exception.", e);
         }
@@ -77,12 +77,12 @@ public class TestPlayer {
     public void testGiveMoney() {
         int money = player1.get_money() + 500;
         player1.giveMoney(500);
-        assertEquals(money, player1.get_money());
+        assertEquals(player1.get_money(), money);
 
         money = player1.get_money();
         try {
             player1.giveMoney(-1);
-            assertEquals(money, player1.get_money());
+            assertEquals(player1.get_money(), money);
         } catch (Exception e) {
             Assert.fail("Unexpected exception.", e);
         }
@@ -92,12 +92,12 @@ public class TestPlayer {
     public void testTakeMoney() {
         int money = player1.get_money() - 500;
         player1.takeMoney(500);
-        assertEquals(money, player1.get_money());
+        assertEquals(player1.get_money(), money);
 
         money = player1.get_money();
         try {
             player1.takeMoney(-1);
-            assertEquals(money, player1.get_money());
+            assertEquals(player1.get_money(), money);
         } catch (Exception e) {
             Assert.fail("Unexpected exception.", e);
         }
@@ -122,7 +122,7 @@ public class TestPlayer {
         int turns = player1.getTurnsLeftInJail();
         try {
             player1.setTurnsLeftInJail(-1);
-            assertEquals(turns, player1.getTurnsLeftInJail());
+            assertEquals(player1.getTurnsLeftInJail(), turns);
         } catch (Exception e) {
             
         }

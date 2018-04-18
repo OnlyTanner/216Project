@@ -11,7 +11,6 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-@Test
 public class TestStandardProperty {
     private StandardProperty prop;
     private int[] test;

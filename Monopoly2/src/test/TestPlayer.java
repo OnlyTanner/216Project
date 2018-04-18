@@ -10,9 +10,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotNull;
 
 public class TestPlayer {
     private Player player1;
@@ -28,8 +30,8 @@ public class TestPlayer {
     }
 
     @BeforeMethod
-    public void setUp() {
-        player1 = new Player();
+    public void setUp() throws IOException {
+        player1 = new Player(1);
     }
 
     @AfterMethod
@@ -105,6 +107,8 @@ public class TestPlayer {
             Assert.assertTrue(player1.getStillInGame());
             player1.takeMoney(money + 1);
             Assert.assertFalse(player1.getStillInGame());
+            player1.takeMoney(1); //take money after the player has no money
+            Assert.assertFalse(player1.getStillInGame());
         } catch (Exception e) {
             Assert.fail("Unexpected exception.", e);
         }
@@ -136,6 +140,10 @@ public class TestPlayer {
         assertEquals(player1.getTurnsLeftInJail(), 3);
         assertEquals(player1.getGetOutOfJailFreeCards(), 2);
         assertEquals(player1.getStillInGame(), false);
+        assertNotNull(player1.getSprite());
+
+        player1.addPlayerPos(3);
+        assertEquals(player1.getPlayerPos(), 8);
     }
 
     @Test

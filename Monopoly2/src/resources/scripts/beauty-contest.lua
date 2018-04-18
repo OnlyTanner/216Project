@@ -1,3 +1,3 @@
-local player = require("core.PlayerLuaLibrary")
+local player = require("PlayerLuaLibrary")
 
 player.giveMoney(player.currPlayer(), 10)

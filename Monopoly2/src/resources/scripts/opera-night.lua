@@ -1,5 +1,5 @@
-local player = require("core.PlayerLuaLibrary")
-local lib = require("core.LuaLibrary")
+local player = require("PlayerLuaLibrary")
+local lib = require("LuaLibrary")
 
 player.giveMoney(player.currPlayer(), player.count() * 50)
 for i=0,player.count()-1 do

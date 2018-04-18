@@ -1,5 +1,6 @@
 package test;
 
+import core.Player;
 import core.UtilityProperty;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -27,7 +28,7 @@ public class TestUtilityProperty {
     public void setUp() {
         test = new int[1];
         test[0] = 15;
-        prop = new core.UtilityProperty("test_prop", 100, test, 100);
+        prop = new core.UtilityProperty("test_prop", 100, test, 500);
     }
 
     @AfterMethod
@@ -37,9 +38,16 @@ public class TestUtilityProperty {
     @Test
     public void testGettersAndSetters() {
         prop.setMortgaged(true);
-        Assert.assertFalse(prop.getMortgaged());
+        Assert.assertTrue(prop.getMortgaged());
         Assert.assertEquals(prop.getName(), "test_prop");
         Assert.assertEquals(prop.getCost(), 100);
         Assert.assertEquals(prop.getMortgageRate(), 500);
+    }
+
+    @Test
+    public void testGetRent() {
+        Player p = new Player();
+        Assert.assertEquals(prop.getRent(p, 2), 30);
+        Assert.assertEquals(prop.getRent(p, 12), 180);
     }
 }

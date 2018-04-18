@@ -1,5 +1,6 @@
 package test;
 
+import core.Player;
 import core.RailroadProperty;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -37,9 +38,16 @@ public class TestRailroadProperty {
     @Test
     public void testGettersAndSetters() {
         prop.setMortgaged(true);
-        Assert.assertFalse(prop.getMortgaged());
+        Assert.assertTrue(prop.getMortgaged());
         Assert.assertEquals(prop.getName(), "test_prop");
         Assert.assertEquals(prop.getCost(), 100);
         Assert.assertEquals(prop.getMortgageRate(), 500);
+    }
+
+    @Test
+    public void testGetRent() {
+        Player p = new Player();
+        Assert.assertEquals(prop.getRent(p, 2), 15);
+        Assert.assertEquals(prop.getRent(p, 12), 15); //rent isn't affected by the die roll
     }
 }

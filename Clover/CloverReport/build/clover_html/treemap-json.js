@@ -1,20 +1,20 @@
-var treeMapJson = {"id":"Clover database Wed Apr 18 2018 15:03:27 MST0","name":"","data":{
-    "$area":1526.0,"$color":9.76409,"title":
-    " 1526 Elements, 9.8% Coverage"},"children":[{"id":"core0","name":
-      "core","data":{"$area":1526.0,"$color":9.76409,"title":
-        "core 1526 Elements, 9.8% Coverage"},"children":[{"id":
+var treeMapJson = {"id":"Clover database Thu Apr 26 2018 11:31:38 MST0","name":"","data":{
+    "$area":1538.0,"$color":10.728218,"title":
+    " 1538 Elements, 10.7% Coverage"},"children":[{"id":"core0","name":
+      "core","data":{"$area":1538.0,"$color":10.728218,"title":
+        "core 1538 Elements, 10.7% Coverage"},"children":[{"id":
           "PropertyOpMenu0","name":"PropertyOpMenu","data":{"$area":147.0,
             "$color":0.0,"path":"core/PropertyOpMenu.html#PropertyOpMenu",
             "title":"PropertyOpMenu 147 Elements, 0% Coverage"},"children":[]},
         {"id":"Hud147","name":"Hud","data":{"$area":27.0,"$color":0.0,"path":
             "core/Hud.html#Hud","title":"Hud 27 Elements, 0% Coverage"},
           "children":[]},{"id":"OneOpSpace174","name":"OneOpSpace","data":{
-            "$area":16.0,"$color":0.0,"path":
+            "$area":16.0,"$color":18.75,"path":
             "core/OneOpSpace.html#OneOpSpace","title":
-            "OneOpSpace 16 Elements, 0% Coverage"},"children":[]},{"id":
-          "Player190","name":"Player","data":{"$area":54.0,"$color":
-            70.37037,"path":"core/Player.html#Player","title":
-            "Player 54 Elements, 70.4% Coverage"},"children":[]},{"id":
+            "OneOpSpace 16 Elements, 18.8% Coverage"},"children":[]},{"id":
+          "Player1774","name":"Player","data":{"$area":66.0,"$color":
+            77.27273,"path":"core/Player.html#Player","title":
+            "Player 66 Elements, 77.3% Coverage"},"children":[]},{"id":
           "App244","name":"App","data":{"$area":55.0,"$color":0.0,"path":
             "core/App.html#App","title":"App 55 Elements, 0% Coverage"},
           "children":[]},{"id":"App.Mode244","name":"App.Mode","data":{

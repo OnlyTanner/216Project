@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="5" failed="8" ignored="0" total="23" passed="10">
+<testng-results skipped="6" failed="4" ignored="0" total="23" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Monopoly Test" duration-ms="56" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+  <suite name="Monopoly Test" duration-ms="156" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
     <groups>
     </groups>
-    <test name="Class Tests" duration-ms="56" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+    <test name="Class Tests" duration-ms="156" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+      <class name="test.PlayerTest2">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.PlayerTest2@24273305]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Property()[pri:0, instance:test.PlayerTest2@24273305]" name="Property" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Property -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.PlayerTest2@24273305]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.PlayerTest2 -->
       <class name="test.TestCard">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:test.TestCard@7bfcd12c]" name="setUpBeforeClass" is-config="true" duration-ms="11" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:test.TestCard@490d6c15]" name="setUpBeforeClass" is-config="true" duration-ms="10" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:test.TestCard@7bfcd12c]" name="setUp" is-config="true" duration-ms="2" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:test.TestCard@490d6c15]" name="setUp" is-config="true" duration-ms="2" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[\resources\scripts\go-to-jail.lua (The system cannot find the path specified)]]>
@@ -27,7 +41,7 @@ at test.TestCard.setUp(Unknown Source)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at java.lang.reflect.Method.invoke(Method.java:497)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
 at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
@@ -57,7 +71,11 @@ at org.testng.TestNG.main(TestNG.java:1323)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="testGettersAndSetters()[pri:0, instance:test.TestCard@7bfcd12c]" name="testGettersAndSetters" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="SKIP" signature="tearDownAfterClass()[pri:0, instance:test.TestCard@490d6c15]" name="tearDownAfterClass" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterClass -->
+        <test-method status="SKIP" signature="testGettersAndSetters()[pri:0, instance:test.TestCard@490d6c15]" name="testGettersAndSetters" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[\resources\scripts\go-to-jail.lua (The system cannot find the path specified)]]>
@@ -73,7 +91,7 @@ at test.TestCard.setUp(Unknown Source)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at java.lang.reflect.Method.invoke(Method.java:497)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
 at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
@@ -103,67 +121,67 @@ at org.testng.TestNG.main(TestNG.java:1323)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGettersAndSetters -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.TestCard@7bfcd12c]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.TestCard@490d6c15]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="tearDownAfterClass()[pri:0, instance:test.TestCard@7bfcd12c]" name="tearDownAfterClass" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownAfterClass -->
       </class> <!-- test.TestCard -->
       <class name="test.TestStandardProperty">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestStandardProperty@18e8568]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestStandardProperty@7bfcd12c]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:test.TestStandardProperty@18e8568]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:test.TestStandardProperty@7bfcd12c]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="testUpgradeAndDowngrade()[pri:0, instance:test.TestStandardProperty@18e8568]" name="testUpgradeAndDowngrade" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestStandardProperty@7bfcd12c]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGettersAndSetters()[pri:0, instance:test.TestStandardProperty@7bfcd12c]" name="testGettersAndSetters" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGettersAndSetters -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestStandardProperty@7bfcd12c]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestStandardProperty@7bfcd12c]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestStandardProperty@7bfcd12c]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestStandardProperty@7bfcd12c]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="testUpgradeAndDowngrade()[pri:0, instance:test.TestStandardProperty@7bfcd12c]" name="testUpgradeAndDowngrade" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpgradeAndDowngrade -->
-        <test-method status="PASS" signature="testGettersAndSetters()[pri:0, instance:test.TestStandardProperty@18e8568]" name="testGettersAndSetters" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGettersAndSetters -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestStandardProperty@18e8568]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestStandardProperty@18e8568]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestStandardProperty@18e8568]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testRent()[pri:0, instance:test.TestStandardProperty@18e8568]" name="testRent" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="testRent()[pri:0, instance:test.TestStandardProperty@7bfcd12c]" name="testRent" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRent -->
-        <test-method status="PASS" signature="tearDownAfterClass()[pri:0, instance:test.TestStandardProperty@18e8568]" name="tearDownAfterClass" is-config="true" duration-ms="1" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="tearDownAfterClass()[pri:0, instance:test.TestStandardProperty@7bfcd12c]" name="tearDownAfterClass" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAfterClass -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestStandardProperty@18e8568]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestStandardProperty@18e8568]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- test.TestStandardProperty -->
       <class name="test.TestSprite">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:test.TestSprite@1c2c22f3]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestSprite@66133adc]" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:test.TestSprite@66133adc]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="FAIL" signature="testMiscSettersAndGetters()[pri:0, instance:test.TestSprite@1c2c22f3]" name="testMiscSettersAndGetters" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="FAIL" signature="testMiscSettersAndGetters()[pri:0, instance:test.TestSprite@66133adc]" name="testMiscSettersAndGetters" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -172,7 +190,7 @@ at test.TestSprite.testMiscSettersAndGetters(Unknown Source)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at java.lang.reflect.Method.invoke(Method.java:497)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
@@ -199,19 +217,11 @@ at org.testng.TestNG.main(TestNG.java:1323)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMiscSettersAndGetters -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestSprite@1c2c22f3]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestSprite@66133adc]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestSprite@1c2c22f3]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestSprite@1c2c22f3]" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testSpriteManipulation()[pri:0, instance:test.TestSprite@1c2c22f3]" name="testSpriteManipulation" duration-ms="3" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="FAIL" signature="testSpriteManipulation()[pri:0, instance:test.TestSprite@66133adc]" name="testSpriteManipulation" duration-ms="1" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -222,7 +232,7 @@ at test.TestSprite.testSpriteManipulation(Unknown Source)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at java.lang.reflect.Method.invoke(Method.java:497)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
@@ -249,21 +259,21 @@ at org.testng.TestNG.main(TestNG.java:1323)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSpriteManipulation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestSprite@1c2c22f3]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestSprite@66133adc]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDownAfterClass()[pri:0, instance:test.TestSprite@1c2c22f3]" name="tearDownAfterClass" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestSprite@66133adc]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDownAfterClass()[pri:0, instance:test.TestSprite@66133adc]" name="tearDownAfterClass" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAfterClass -->
       </class> <!-- test.TestSprite -->
       <class name="test.TestCardSpace">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:test.TestCardSpace@42f30e0a]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBeforeClass -->
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:test.TestCardSpace@42f30e0a]" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:test.TestCardSpace@7d4793a8]" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[\resources\config\chance.json (The system cannot find the path specified)]]>
@@ -280,7 +290,7 @@ at test.TestCardSpace.setUp(Unknown Source)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at java.lang.reflect.Method.invoke(Method.java:497)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
 at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
@@ -310,15 +320,19 @@ at org.testng.TestNG.main(TestNG.java:1323)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:test.TestCardSpace@42f30e0a]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:test.TestCardSpace@7d4793a8]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:test.TestCardSpace@7d4793a8]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:test.TestCardSpace@42f30e0a]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.TestCardSpace@7d4793a8]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="testCardSprite()[pri:0, instance:test.TestCardSpace@42f30e0a]" name="testCardSprite" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="testCardSprite()[pri:0, instance:test.TestCardSpace@7d4793a8]" name="testCardSprite" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[\resources\config\chance.json (The system cannot find the path specified)]]>
@@ -335,7 +349,7 @@ at test.TestCardSpace.setUp(Unknown Source)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at java.lang.reflect.Method.invoke(Method.java:497)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
 at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
@@ -365,15 +379,7 @@ at org.testng.TestNG.main(TestNG.java:1323)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCardSprite -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.TestCardSpace@42f30e0a]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.TestCardSpace@42f30e0a]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="testGetName()[pri:0, instance:test.TestCardSpace@42f30e0a]" name="testGetName" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="SKIP" signature="testCardCnt()[pri:0, instance:test.TestCardSpace@7d4793a8]" name="testCardCnt" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[\resources\config\chance.json (The system cannot find the path specified)]]>
@@ -390,113 +396,7 @@ at test.TestCardSpace.setUp(Unknown Source)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.TestNG.privateMain(TestNG.java:1354)
-at org.testng.TestNG.main(TestNG.java:1323)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetName -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.TestCardSpace@42f30e0a]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:test.TestCardSpace@42f30e0a]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.TestCardSpace@42f30e0a]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="testDrawCard()[pri:0, instance:test.TestCardSpace@42f30e0a]" name="testDrawCard" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[\resources\config\chance.json (The system cannot find the path specified)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: \resources\config\chance.json (The system cannot find the path specified)
-at java.io.FileInputStream.open0(Native Method)
-at java.io.FileInputStream.open(FileInputStream.java:195)
-at java.io.FileInputStream.<init>(FileInputStream.java:138)
-at core.Resources.stream(Unknown Source)
-at core.CardSpace.parseConfig(Unknown Source)
-at core.CardSpace.<init>(Unknown Source)
-at test.TestCardSpace.setUp(Unknown Source)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.TestNG.privateMain(TestNG.java:1354)
-at org.testng.TestNG.main(TestNG.java:1323)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDrawCard -->
-        <test-method status="SKIP" signature="testCardCnt()[pri:0, instance:test.TestCardSpace@42f30e0a]" name="testCardCnt" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[\resources\config\chance.json (The system cannot find the path specified)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: \resources\config\chance.json (The system cannot find the path specified)
-at java.io.FileInputStream.open0(Native Method)
-at java.io.FileInputStream.open(FileInputStream.java:195)
-at java.io.FileInputStream.<init>(FileInputStream.java:138)
-at core.Resources.stream(Unknown Source)
-at core.CardSpace.parseConfig(Unknown Source)
-at core.CardSpace.<init>(Unknown Source)
-at test.TestCardSpace.setUp(Unknown Source)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at java.lang.reflect.Method.invoke(Method.java:497)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
 at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
@@ -526,214 +426,203 @@ at org.testng.TestNG.main(TestNG.java:1323)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCardCnt -->
-        <test-method status="SKIP" signature="tearDownAfterClass()[pri:0, instance:test.TestCardSpace@42f30e0a]" name="tearDownAfterClass" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.TestCardSpace@7d4793a8]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.TestCardSpace@7d4793a8]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.TestCardSpace@7d4793a8]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:test.TestCardSpace@7d4793a8]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="testGetName()[pri:0, instance:test.TestCardSpace@7d4793a8]" name="testGetName" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[\resources\config\chance.json (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: \resources\config\chance.json (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(FileInputStream.java:195)
+at java.io.FileInputStream.<init>(FileInputStream.java:138)
+at core.Resources.stream(Unknown Source)
+at core.CardSpace.parseConfig(Unknown Source)
+at core.CardSpace.<init>(Unknown Source)
+at test.TestCardSpace.setUp(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:497)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetName -->
+        <test-method status="SKIP" signature="testDrawCard()[pri:0, instance:test.TestCardSpace@7d4793a8]" name="testDrawCard" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[\resources\config\chance.json (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: \resources\config\chance.json (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(FileInputStream.java:195)
+at java.io.FileInputStream.<init>(FileInputStream.java:138)
+at core.Resources.stream(Unknown Source)
+at core.CardSpace.parseConfig(Unknown Source)
+at core.CardSpace.<init>(Unknown Source)
+at test.TestCardSpace.setUp(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:497)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDrawCard -->
+        <test-method status="SKIP" signature="tearDownAfterClass()[pri:0, instance:test.TestCardSpace@7d4793a8]" name="tearDownAfterClass" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAfterClass -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:test.TestCardSpace@7d4793a8]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
       </class> <!-- test.TestCardSpace -->
       <class name="test.TestPlayer">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:test.TestPlayer@5b1d2887]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:test.TestPlayer@5479e3f]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestPlayer@5b1d2887]" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestPlayer@5479e3f]" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testGiveMoney()[pri:0, instance:test.TestPlayer@5b1d2887]" name="testGiveMoney" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [1500] but found [1499]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [1500] but found [1499]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:652)
-at org.testng.Assert.assertEquals(Assert.java:662)
-at test.TestPlayer.testGiveMoney(Unknown Source)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.TestNG.privateMain(TestNG.java:1354)
-at org.testng.TestNG.main(TestNG.java:1323)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="testGiveMoney()[pri:0, instance:test.TestPlayer@5479e3f]" name="testGiveMoney" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGiveMoney -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestPlayer@5b1d2887]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestPlayer@5479e3f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestPlayer@5b1d2887]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestPlayer@5479e3f]" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestPlayer@5b1d2887]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testMiscSettersAndGetters()[pri:0, instance:test.TestPlayer@5b1d2887]" name="testMiscSettersAndGetters" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="testMiscSettersAndGetters()[pri:0, instance:test.TestPlayer@5479e3f]" name="testMiscSettersAndGetters" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMiscSettersAndGetters -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestPlayer@5b1d2887]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="testProperties()[pri:0, instance:test.TestPlayer@5b1d2887]" name="testProperties" duration-ms="1" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="testProperties()[pri:0, instance:test.TestPlayer@5479e3f]" name="testProperties" duration-ms="1" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProperties -->
-        <test-method status="FAIL" signature="testSetPlayerPos()[pri:0, instance:test.TestPlayer@5b1d2887]" name="testSetPlayerPos" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [39] but found [-1]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [39] but found [-1]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:652)
-at org.testng.Assert.assertEquals(Assert.java:662)
-at test.TestPlayer.testSetPlayerPos(Unknown Source)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.TestNG.privateMain(TestNG.java:1354)
-at org.testng.TestNG.main(TestNG.java:1323)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestPlayer@5479e3f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestPlayer@5479e3f]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testSetPlayerPos()[pri:0, instance:test.TestPlayer@5479e3f]" name="testSetPlayerPos" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetPlayerPos -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestPlayer@5b1d2887]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestPlayer@5479e3f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestPlayer@5b1d2887]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestPlayer@5479e3f]" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestPlayer@5b1d2887]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestPlayer@5479e3f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="testSetTurnsLeftInJail()[pri:0, instance:test.TestPlayer@5b1d2887]" name="testSetTurnsLeftInJail" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [1] but found [-1]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [1] but found [-1]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:652)
-at org.testng.Assert.assertEquals(Assert.java:662)
-at test.TestPlayer.testSetTurnsLeftInJail(Unknown Source)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.TestNG.privateMain(TestNG.java:1354)
-at org.testng.TestNG.main(TestNG.java:1323)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestPlayer@5479e3f]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testSetTurnsLeftInJail()[pri:0, instance:test.TestPlayer@5479e3f]" name="testSetTurnsLeftInJail" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetTurnsLeftInJail -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestPlayer@5b1d2887]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestPlayer@5479e3f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestPlayer@5b1d2887]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testTakeMoney()[pri:0, instance:test.TestPlayer@5b1d2887]" name="testTakeMoney" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="FAIL" signature="testTakeMoney()[pri:0, instance:test.TestPlayer@5479e3f]" name="testTakeMoney" duration-ms="106" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [500] but found [501]]]>
+              <![CDATA[Unexpected exception.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [500] but found [501]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:652)
-at org.testng.Assert.assertEquals(Assert.java:662)
+              <![CDATA[java.lang.AssertionError: Unexpected exception.
+at org.testng.Assert.fail(Assert.java:85)
 at test.TestPlayer.testTakeMoney(Unknown Source)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at java.lang.reflect.Method.invoke(Method.java:497)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
@@ -754,40 +643,64 @@ at org.testng.TestNG.runSuites(TestNG.java:1049)
 at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.TestNG.privateMain(TestNG.java:1354)
 at org.testng.TestNG.main(TestNG.java:1323)
+Caused by: java.lang.NullPointerException
+at core.Notification.notify(Unknown Source)
+at core.Player.takeMoney(Unknown Source)
+... 25 more
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTakeMoney -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestPlayer@5b1d2887]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestPlayer@5b1d2887]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestPlayer@5479e3f]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testTurnsLeftInJail()[pri:0, instance:test.TestPlayer@5b1d2887]" name="testTurnsLeftInJail" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestPlayer@5479e3f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestPlayer@5479e3f]" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDownAfterClass()[pri:0, instance:test.TestPlayer@5479e3f]" name="tearDownAfterClass" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterClass -->
+        <test-method status="PASS" signature="testTurnsLeftInJail()[pri:0, instance:test.TestPlayer@5479e3f]" name="testTurnsLeftInJail" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTurnsLeftInJail -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestPlayer@5479e3f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.TestPlayer -->
+      <class name="test.OneOpSpaceTest">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:test.OneOpSpaceTest@42f30e0a]" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <exception class="java.io.FileNotFoundException">
             <message>
-              <![CDATA[expected [5] but found [-1]]]>
+              <![CDATA[\resources\scripts\advance-to-go.lua (The system cannot find the path specified)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [5] but found [-1]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:652)
-at org.testng.Assert.assertEquals(Assert.java:662)
-at test.TestPlayer.testTurnsLeftInJail(Unknown Source)
+              <![CDATA[java.io.FileNotFoundException: \resources\scripts\advance-to-go.lua (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(FileInputStream.java:195)
+at java.io.FileInputStream.<init>(FileInputStream.java:138)
+at core.Resources.stream(Unknown Source)
+at core.OneOpSpace.<init>(Unknown Source)
+at test.OneOpSpaceTest.setUp(Unknown Source)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at java.lang.reflect.Method.invoke(Method.java:497)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -808,67 +721,71 @@ at org.testng.TestNG.privateMain(TestNG.java:1354)
 at org.testng.TestNG.main(TestNG.java:1323)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTurnsLeftInJail -->
-        <test-method status="PASS" signature="tearDownAfterClass()[pri:0, instance:test.TestPlayer@5b1d2887]" name="tearDownAfterClass" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownAfterClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestPlayer@5b1d2887]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestPlayer@5b1d2887]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.OneOpSpaceTest@42f30e0a]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.TestPlayer -->
-      <class name="test.TestUtilityProperty">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestUtilityProperty@33e5ccce]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="SKIP" signature="testGeterandSetters()[pri:0, instance:test.OneOpSpaceTest@42f30e0a]" name="testGeterandSetters" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[\resources\scripts\advance-to-go.lua (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: \resources\scripts\advance-to-go.lua (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(FileInputStream.java:195)
+at java.io.FileInputStream.<init>(FileInputStream.java:138)
+at core.Resources.stream(Unknown Source)
+at core.OneOpSpace.<init>(Unknown Source)
+at test.OneOpSpaceTest.setUp(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:497)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGetRent()[pri:0, instance:test.TestUtilityProperty@33e5ccce]" name="testGetRent" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetRent -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestUtilityProperty@33e5ccce]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:test.TestUtilityProperty@33e5ccce]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="tearDownAfterClass()[pri:0, instance:test.TestUtilityProperty@33e5ccce]" name="tearDownAfterClass" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownAfterClass -->
-        <test-method status="PASS" signature="testGettersAndSetters()[pri:0, instance:test.TestUtilityProperty@33e5ccce]" name="testGettersAndSetters" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGettersAndSetters -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestUtilityProperty@33e5ccce]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestUtilityProperty@33e5ccce]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-      </class> <!-- test.TestUtilityProperty -->
+        </test-method> <!-- testGeterandSetters -->
+      </class> <!-- test.OneOpSpaceTest -->
       <class name="test.TestDie">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:test.TestDie@24273305]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestDie@24273305]" name="setUp" is-config="true" duration-ms="2" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestDie@449b2d27]" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testGettersAndSetters()[pri:0, instance:test.TestDie@24273305]" name="testGettersAndSetters" duration-ms="1" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:test.TestDie@449b2d27]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="FAIL" signature="testGettersAndSetters()[pri:0, instance:test.TestDie@449b2d27]" name="testGettersAndSetters" duration-ms="2" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -878,7 +795,7 @@ at test.TestDie.testGettersAndSetters(Unknown Source)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at java.lang.reflect.Method.invoke(Method.java:497)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
@@ -905,60 +822,60 @@ at org.testng.TestNG.main(TestNG.java:1323)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGettersAndSetters -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestDie@24273305]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestDie@24273305]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestDie@449b2d27]" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testSetNum()[pri:0, instance:test.TestDie@24273305]" name="testSetNum" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetNum -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestDie@24273305]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestDie@449b2d27]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDownAfterClass()[pri:0, instance:test.TestDie@24273305]" name="tearDownAfterClass" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="testSetNum()[pri:0, instance:test.TestDie@449b2d27]" name="testSetNum" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetNum -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestDie@449b2d27]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDownAfterClass()[pri:0, instance:test.TestDie@449b2d27]" name="tearDownAfterClass" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAfterClass -->
       </class> <!-- test.TestDie -->
       <class name="test.TestRailroadProperty">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:test.TestRailroadProperty@46f5f779]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:test.TestRailroadProperty@27082746]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="testGetRent()[pri:0, instance:test.TestRailroadProperty@46f5f779]" name="testGetRent" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="testGetRent()[pri:0, instance:test.TestRailroadProperty@27082746]" name="testGetRent" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetRent -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestRailroadProperty@46f5f779]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestRailroadProperty@27082746]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestRailroadProperty@46f5f779]" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestRailroadProperty@46f5f779]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestRailroadProperty@27082746]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="testGettersAndSetters()[pri:0, instance:test.TestRailroadProperty@46f5f779]" name="testGettersAndSetters" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestRailroadProperty@27082746]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestRailroadProperty@27082746]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGettersAndSetters()[pri:0, instance:test.TestRailroadProperty@27082746]" name="testGettersAndSetters" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGettersAndSetters -->
-        <test-method status="PASS" signature="tearDownAfterClass()[pri:0, instance:test.TestRailroadProperty@46f5f779]" name="tearDownAfterClass" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
+        <test-method status="PASS" signature="tearDownAfterClass()[pri:0, instance:test.TestRailroadProperty@27082746]" name="tearDownAfterClass" is-config="true" duration-ms="0" started-at="2018-04-26T18:32:16Z" finished-at="2018-04-26T18:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAfterClass -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestRailroadProperty@46f5f779]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-18T22:21:13Z" finished-at="2018-04-18T22:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- test.TestRailroadProperty -->
     </test> <!-- Class Tests -->
   </suite> <!-- Monopoly Test -->

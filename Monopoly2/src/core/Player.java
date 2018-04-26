@@ -36,10 +36,10 @@ public class Player {
 	}
 
 	// setter and getter for playerPos
-	public void setPlayerPos(int playerPos)
-		{
+	public void setPlayerPos(int playerPos) {
+		if (playerPos >= 0 && playerPos <= 39)
 			this.playerPos = playerPos;
-		}
+	}
 	public int getPlayerPos()
 		{
 			return playerPos;
@@ -68,7 +68,8 @@ public class Player {
 	 * @param amount money in dollars
 	 */
 	public void giveMoney(int amount) {
-		money += amount;
+		if (amount > 0)
+			money += amount;
 	}
 
 	/**
@@ -77,11 +78,13 @@ public class Player {
 	 * @param amount money in dollars
 	 */
 	public void takeMoney(int amount) {
-		money -= amount;
-		if(money < 0) {
-			money = 0;
-			stillInGame = false;
-			Notification.notify("A player has been eliminated!");
+		if (amount > 0) {
+			money -= amount;
+			if (money < 0) {
+				money = 0;
+				stillInGame = false;
+				Notification.notify("A player has been eliminated!");
+			}
 		}
 	}
 
@@ -114,9 +117,10 @@ public class Player {
 
 	// setter and getter for turns left in jail
 	public void setTurnsLeftInJail(int turnsLeftInJail)
-		{
+	{
+		if (turnsLeftInJail >= 0)
 			this.turnsLeftInJail = turnsLeftInJail;
-		}
+	}
 
 	public int getTurnsLeftInJail()
 		{
@@ -132,14 +136,14 @@ public class Player {
 
 	// setter and getter for still in game
 	public void setStillInGame(boolean inJail )
-		{
-			stillInGame = inJail;
-		}
+	{
+		stillInGame = inJail;
+	}
 
 	public boolean getStillInGame()
-		{
-			return stillInGame;
-		}
+	{
+		return stillInGame;
+	}
 
 	/**
 	 * Gives the user a property.

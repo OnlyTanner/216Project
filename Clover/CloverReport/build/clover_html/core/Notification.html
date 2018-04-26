@@ -113,7 +113,7 @@
                     
                     <ol class="aui-nav aui-nav-breadcrumbs">
             
-        <li><a href="../dashboard.html">Project Clover database Wed Apr 18 2018 15:03:27 MST</a></li> 
+        <li><a href="../dashboard.html">Project Clover database Thu Apr 26 2018 11:31:38 MST</a></li> 
         <li><a href="pkg-summary.html">        Package core</a></li> 
     </ol>
     
@@ -145,19 +145,19 @@
                     <img src="../img/srcFileCovDistChart0.png" alt="../img/srcFileCovDistChart0.png"
                          usemap="#srcFileCovDistChart0.png" class="clover-histogram-img"/>
                     <map id="srcFileCovDistChart0.png" name="srcFileCovDistChart0.png">
-<area shape="rect" coords="100,63,107,66" title="1 file has 91-100% coverage" alt="" nohref="nohref"/>
-<area shape="rect" coords="91,59,98,66" title="2 files have 81-90% coverage" alt="" nohref="nohref"/>
-<area shape="rect" coords="82,66,89,67" title="0 files have 71-80% coverage" alt="" nohref="nohref"/>
-<area shape="rect" coords="73,63,80,66" title="1 file has 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="100,62,107,66" title="1 file has 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,58,98,66" title="2 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,62,89,66" title="1 file has 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,66,80,67" title="0 files have 61-70% coverage" alt="" nohref="nohref"/>
 <area shape="rect" coords="64,66,71,67" title="0 files have 51-60% coverage" alt="" nohref="nohref"/>
-<area shape="rect" coords="56,63,63,66" title="1 file has 41-50% coverage" alt="" nohref="nohref"/>
-<area shape="rect" coords="47,63,54,66" title="1 file has 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,62,63,66" title="1 file has 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,62,54,66" title="1 file has 31-40% coverage" alt="" nohref="nohref"/>
 <area shape="rect" coords="38,66,45,67" title="0 files have 21-30% coverage" alt="" nohref="nohref"/>
-<area shape="rect" coords="29,59,36,66" title="2 files have 11-20% coverage" alt="" nohref="nohref"/>
-<area shape="rect" coords="20,63,27,66" title="1 file has 1-10% coverage" alt="" nohref="nohref"/>
-<area shape="rect" coords="11,8,18,65" title="15 files have 0% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,54,36,66" title="3 files have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,62,27,66" title="1 file has 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,8,18,65" title="14 files have 0% coverage" alt="" nohref="nohref"/>
 </map><br />
-                    <span class="subtle"><strong>37% </strong>of files have more coverage</span>
+                    <span class="subtle"><strong>41% </strong>of files have more coverage</span>
                 </div>
             </div>
         </div>
@@ -411,9 +411,88 @@
 
 <h2>Contributing tests</h2>
 
-    <div class="aui-message">
-        <p>No tests hitting this source file were found.</p>
+    <div>
+                This file is covered by 1 test.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
     </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-18">
+<td><a name="testA-18"></a><input type="checkbox" id="cb-18" value="18" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../test/TestPlayer_testTakeMoney_i.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-18">  <span class="sortValue">test.TestPlayer.testTakeMoney</span><a href="../test/TestPlayer_testTakeMoney_i.html" title="View Test Summary Page">test.TestPlayer.testTakeMoney</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../test/TestPlayer.html?line=91#src-91" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../test/TestPlayer_testTakeMoney_i.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
  
         
         
@@ -523,7 +602,7 @@
 </tr>
 <tr id="l11">
 <td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
-<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 11, 'Tests that hit Notification');" >&#160;&#160;</td>
 <td class=" srcCell" id="id-11"><span class="spacer"></span><span id="src-11" class="srcLine"><span class="keyword">public</span> <span class="keyword">class</span> <a href="../core/Notification.html#Notification">Notification</a> {</span></td>
 </tr>
  <tr id="l12">
@@ -663,22 +742,22 @@
 </tr>
 <tr id="l33">
 <td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
-<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 33, Col 5: method not entered." class="nolink">&#160;0</span></td>
+<td align="right" class="coverageCount Bad hitByFailedTest"   onclick="return showTestsForLine(this, 33, 'Tests that hit notify(String)&#160;:&#160;void');" ><span title="Line 33, Col 5: method not entered." class="nolink">&#160;0</span></td>
 <td class=" methodStart  srcCell" id="id-33"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 33,54);" id="img-33" src="../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-33" class="srcLineHilight"><span class="nolink" title="Line 33, Col 5: method not entered.">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> notify(String message) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-33'), 33,54);" id="e33" style="display:none;border:none;">...</span></span></td>
 </tr>
  <tr id="l34">
 <td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
-<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 34, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td align="right" class="coverageCount Bad hitByFailedTest"   onclick="return showTestsForLine(this, 34, 'Tests that hit line # 34');" ><span title="Line 34, Col 9: statement not executed." class="nolink">&#160;0</span></td>
 <td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLineHilight"><span class="nolink" title="Line 34, Col 9: statement not executed.">        BufferedImage placeholder = <span class="keyword">new</span> BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB);</span></span></td>
 </tr>
  <tr id="l35">
 <td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
-<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 35, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td align="right" class="coverageCount Bad hitByFailedTest"   onclick="return showTestsForLine(this, 35, 'Tests that hit line # 35');" ><span title="Line 35, Col 9: statement not executed." class="nolink">&#160;0</span></td>
 <td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLineHilight"><span class="nolink" title="Line 35, Col 9: statement not executed.">        Graphics2D g = placeholder.createGraphics();</span></span></td>
 </tr>
  <tr id="l36">
 <td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
-<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 36, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td align="right" class="coverageCount Bad hitByFailedTest"   onclick="return showTestsForLine(this, 36, 'Tests that hit line # 36');" ><span title="Line 36, Col 9: statement not executed." class="nolink">&#160;0</span></td>
 <td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLineHilight"><span class="nolink" title="Line 36, Col 9: statement not executed.">        g.setFont(font);</span></span></td>
 </tr>
  <tr id="l37">
@@ -688,22 +767,22 @@
 </tr>
  <tr id="l38">
 <td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
-<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 38, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td align="right" class="coverageCount Bad hitByFailedTest"   onclick="return showTestsForLine(this, 38, 'Tests that hit line # 38');" ><span title="Line 38, Col 9: statement not executed." class="nolink">&#160;0</span></td>
 <td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLineHilight"><span class="nolink" title="Line 38, Col 9: statement not executed.">        FontMetrics fm = g.getFontMetrics();</span></span></td>
 </tr>
  <tr id="l39">
 <td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
-<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 39, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td align="right" class="coverageCount Bad hitByFailedTest"   onclick="return showTestsForLine(this, 39, 'Tests that hit line # 39');" ><span title="Line 39, Col 9: statement not executed." class="nolink">&#160;0</span></td>
 <td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLineHilight"><span class="nolink" title="Line 39, Col 9: statement not executed.">        <span class="keyword">int</span> width = fm.stringWidth(message);</span></span></td>
 </tr>
  <tr id="l40">
 <td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
-<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 40, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td align="right" class="coverageCount Bad hitByFailedTest"   onclick="return showTestsForLine(this, 40, 'Tests that hit line # 40');" ><span title="Line 40, Col 9: statement not executed." class="nolink">&#160;0</span></td>
 <td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLineHilight"><span class="nolink" title="Line 40, Col 9: statement not executed.">        <span class="keyword">int</span> height = fm.getHeight();</span></span></td>
 </tr>
  <tr id="l41">
 <td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
-<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 41, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td align="right" class="coverageCount Bad hitByFailedTest"   onclick="return showTestsForLine(this, 41, 'Tests that hit line # 41');" ><span title="Line 41, Col 9: statement not executed." class="nolink">&#160;0</span></td>
 <td class=" srcCell" ><span class="spacer"></span><span id="src-41" class="srcLineHilight"><span class="nolink" title="Line 41, Col 9: statement not executed.">        g.dispose();</span></span></td>
 </tr>
  <tr id="l42">
@@ -713,37 +792,37 @@
 </tr>
  <tr id="l43">
 <td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
-<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 43, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td align="right" class="coverageCount Bad hitByFailedTest"   onclick="return showTestsForLine(this, 43, 'Tests that hit line # 43');" ><span title="Line 43, Col 9: statement not executed." class="nolink">&#160;0</span></td>
 <td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLineHilight"><span class="nolink" title="Line 43, Col 9: statement not executed.">        messageImg = <span class="keyword">new</span> BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);</span></span></td>
 </tr>
  <tr id="l44">
 <td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
-<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 44, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td align="right" class="coverageCount Bad hitByFailedTest"   onclick="return showTestsForLine(this, 44, 'Tests that hit line # 44');" ><span title="Line 44, Col 9: statement not executed." class="nolink">&#160;0</span></td>
 <td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLineHilight"><span class="nolink" title="Line 44, Col 9: statement not executed.">        g = messageImg.createGraphics();</span></span></td>
 </tr>
  <tr id="l45">
 <td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
-<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 45, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td align="right" class="coverageCount Bad hitByFailedTest"   onclick="return showTestsForLine(this, 45, 'Tests that hit line # 45');" ><span title="Line 45, Col 9: statement not executed." class="nolink">&#160;0</span></td>
 <td class=" srcCell" ><span class="spacer"></span><span id="src-45" class="srcLineHilight"><span class="nolink" title="Line 45, Col 9: statement not executed.">        g.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);</span></span></td>
 </tr>
  <tr id="l46">
 <td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
-<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 46, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td align="right" class="coverageCount Bad hitByFailedTest"   onclick="return showTestsForLine(this, 46, 'Tests that hit line # 46');" ><span title="Line 46, Col 9: statement not executed." class="nolink">&#160;0</span></td>
 <td class=" srcCell" ><span class="spacer"></span><span id="src-46" class="srcLineHilight"><span class="nolink" title="Line 46, Col 9: statement not executed.">        g.setFont(font);</span></span></td>
 </tr>
  <tr id="l47">
 <td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
-<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 47, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td align="right" class="coverageCount Bad hitByFailedTest"   onclick="return showTestsForLine(this, 47, 'Tests that hit line # 47');" ><span title="Line 47, Col 9: statement not executed." class="nolink">&#160;0</span></td>
 <td class=" srcCell" ><span class="spacer"></span><span id="src-47" class="srcLineHilight"><span class="nolink" title="Line 47, Col 9: statement not executed.">        fm = g.getFontMetrics();</span></span></td>
 </tr>
  <tr id="l48">
 <td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
-<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 48, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td align="right" class="coverageCount Bad hitByFailedTest"   onclick="return showTestsForLine(this, 48, 'Tests that hit line # 48');" ><span title="Line 48, Col 9: statement not executed." class="nolink">&#160;0</span></td>
 <td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLineHilight"><span class="nolink" title="Line 48, Col 9: statement not executed.">        g.setColor(Color.white);</span></span></td>
 </tr>
  <tr id="l49">
 <td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
-<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 49, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td align="right" class="coverageCount Bad hitByFailedTest"   onclick="return showTestsForLine(this, 49, 'Tests that hit line # 49');" ><span title="Line 49, Col 9: statement not executed." class="nolink">&#160;0</span></td>
 <td class=" srcCell" ><span class="spacer"></span><span id="src-49" class="srcLineHilight"><span class="nolink" title="Line 49, Col 9: statement not executed.">        g.drawString(message, 0, fm.getAscent());</span></span></td>
 </tr>
  <tr id="l50">
@@ -753,7 +832,7 @@
 </tr>
  <tr id="l51">
 <td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
-<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 51, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td align="right" class="coverageCount Bad hitByFailedTest"   onclick="return showTestsForLine(this, 51, 'Tests that hit line # 51');" ><span title="Line 51, Col 9: statement not executed." class="nolink">&#160;0</span></td>
 <td class=" srcCell" ><span class="spacer"></span><span id="src-51" class="srcLineHilight"><span class="nolink" title="Line 51, Col 9: statement not executed.">        pos = -background.getHeight(<span class="keyword">null</span>);</span></span></td>
 </tr>
  <tr id="l52">
@@ -915,7 +994,7 @@
         <ul>
             <li>
                 Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.2.1
-                on Wed Apr 18 2018 15:03:32 MST using coverage data from Wed Apr 18 2018 15:03:28 MST.
+                on Thu Apr 26 2018 11:32:13 MST using coverage data from Thu Apr 26 2018 11:31:40 MST.
             </li>
         </ul>
         <ul>

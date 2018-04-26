@@ -3,15 +3,31 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Monopoly Test]">
   <test thread-count="5" name="Class Tests(failed)">
     <classes>
-      <class name="test.TestDie">
+      <class name="test.TestCard">
         <methods>
-          <include name="tearDown"/>
-          <include name="tearDownAfterClass"/>
           <include name="setUpBeforeClass"/>
           <include name="testGettersAndSetters"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDownAfterClass"/>
         </methods>
-      </class> <!-- test.TestDie -->
+      </class> <!-- test.TestCard -->
+      <class name="test.OneOpSpaceTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testGeterandSetters"/>
+        </methods>
+      </class> <!-- test.OneOpSpaceTest -->
+      <class name="test.TestPlayer">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="tearDownAfterClass"/>
+          <include name="testTakeMoney"/>
+          <include name="setUpBeforeClass"/>
+        </methods>
+      </class> <!-- test.TestPlayer -->
       <class name="test.TestCardSpace">
         <methods>
           <include name="setUp"/>
@@ -24,15 +40,6 @@
           <include name="testDrawCard"/>
         </methods>
       </class> <!-- test.TestCardSpace -->
-      <class name="test.TestCard">
-        <methods>
-          <include name="setUpBeforeClass"/>
-          <include name="testGettersAndSetters"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="tearDownAfterClass"/>
-        </methods>
-      </class> <!-- test.TestCard -->
       <class name="test.TestSprite">
         <methods>
           <include name="tearDown"/>
@@ -43,19 +50,15 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- test.TestSprite -->
-      <class name="test.TestPlayer">
+      <class name="test.TestDie">
         <methods>
           <include name="tearDown"/>
-          <include name="testSetTurnsLeftInJail"/>
-          <include name="setUp"/>
           <include name="tearDownAfterClass"/>
-          <include name="testSetPlayerPos"/>
-          <include name="testTakeMoney"/>
-          <include name="testTurnsLeftInJail"/>
           <include name="setUpBeforeClass"/>
-          <include name="testGiveMoney"/>
+          <include name="testGettersAndSetters"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- test.TestPlayer -->
+      </class> <!-- test.TestDie -->
     </classes>
   </test> <!-- Class Tests(failed) -->
 </suite> <!-- Failed suite [Monopoly Test] -->

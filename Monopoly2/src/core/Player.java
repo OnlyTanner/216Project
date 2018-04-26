@@ -78,14 +78,18 @@ public class Player {
 	 * @param amount money in dollars
 	 */
 	public void takeMoney(int amount) {
+		money = 0;
+		stillInGame = false;
+		Notification.notify("A player has been eliminated!");
+		/*
 		if (amount > 0) {
 			money -= amount;
 			if (money < 0) {
 				money = 0;
 				stillInGame = false;
-				Notification.notify("A player has been eliminated!");
+				//Notification.notify("A player has been eliminated!");
 			}
-		}
+		}*/
 	}
 
 	/**

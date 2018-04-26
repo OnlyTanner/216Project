@@ -42,6 +42,9 @@ public class GameScreen {
 
     private Card currCard;
 
+    private Graphics g;
+    private ImageObserver observer;
+
     public GameScreen(JFrame parent, int screenWidth, int screenHeight) throws IOException, FontFormatException, JSONException {
         this.screenWidth = screenWidth;
         this.screenHeight = screenHeight;
@@ -109,7 +112,7 @@ public class GameScreen {
      * @param parent the parent JFrame for user input
      * @throws IOException lack of resources. This should bubble up to the top
      */
-    public void init(int playerCnt, JFrame parent) throws IOException, FontFormatException {
+    public void init(int playerCnt, JFrame parent, Graphics g, ImageObserver observer) throws IOException, FontFormatException {
         ArrayList<Integer> chosenTokens = new ArrayList<>();
         Random random = new Random();
         // Create all the players
@@ -141,6 +144,9 @@ public class GameScreen {
 
         PropertyOpMenu.init(screenWidth, screenHeight, parent);
         PropertyOpMenu.setActive(true);
+
+        this.g = g;
+        this.observer = observer;
 
         Notification.notify("Welcome to Monopoly!");
     }
@@ -316,16 +322,25 @@ public class GameScreen {
      * Pass the turn off to the next player.
      */
     private void turnOver() {
-        do {
-            if (!repeatTurn) {
-                currPlayer++;
-                if (currPlayer >= players.size()) {
-                    currPlayer = 0;
-                }
-            } else {
-                repeatTurn = false;
+        if (!repeatTurn) {
+            currPlayer++;
+            if (currPlayer >= players.size()) {
+                currPlayer = 0;
             }
-        } while(!players.get(currPlayer).getStillInGame());
+        } else {
+            repeatTurn = false;
+        }
+
+        if (!players.get(currPlayer).getStillInGame()) {
+            players.remove(currPlayer);
+            board.draw(g, observer, players, currPlayer);
+            board.drawPlayers(players, g, observer);
+        }
+
+        if (players.size() == 1)
+            Notification.notify("Game Over. Player " + currPlayer + " has won!");
+            //Need a game over screen
+
         PlayerLuaLibrary.setCurrPlayer(currPlayer);
         hud.setCurrPlayer(players.get(currPlayer), currPlayer + 1);
         PropertyOpMenu.setPlayer(players.get(currPlayer));

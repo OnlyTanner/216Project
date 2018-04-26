@@ -2,159 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e08eecd5-0486-4410-8927-5e6e41aa5495" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/.clover/clover4_2_1.db" afterPath="$PROJECT_DIR$/../Clover/CloverReport/.clover/clover4_2_1.db" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/classes/core/GameScreen.class" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/classes/core/GameScreen.class" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/classes/core/Player.class" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/classes/core/Player.class" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/classes/core/PropertyOpMenu.class" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/classes/core/PropertyOpMenu.class" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/agg-pkgs.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/agg-pkgs.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/aui/css/atlassian-icons.svg" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/aui/css/atlassian-icons.svg" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/aui/css/fonts/atlassian-icons.svg" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/aui/css/fonts/atlassian-icons.svg" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/aui/js/aui-datepicker.min.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/aui/js/aui-datepicker.min.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/aui/js/aui-experimental.min.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/aui/js/aui-experimental.min.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/aui/js/aui-soy.min.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/aui/js/aui-soy.min.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/aui/js/aui.min.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/aui/js/aui.min.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/cloud.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/cloud.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/clover-descriptions.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/clover-descriptions.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/clover-tree.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/clover-tree.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/clover.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/clover.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/App.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/App.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/App.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/App.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Board.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Board.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Board.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Board.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/BoardLuaLibrary.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/BoardLuaLibrary.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/BoardLuaLibrary.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/BoardLuaLibrary.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/BoardSpace.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/BoardSpace.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/BoardSpace.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/BoardSpace.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Button.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Button.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Button.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Button.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Card.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Card.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Card.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Card.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/CardSpace.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/CardSpace.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/CardSpace.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/CardSpace.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Die.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Die.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Die.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Die.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/GameScreen.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/GameScreen.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/GameScreen.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/GameScreen.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Hud.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Hud.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Hud.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Hud.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/ImageUtils.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/ImageUtils.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/ImageUtils.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/ImageUtils.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/LuaLibrary.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/LuaLibrary.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/LuaLibrary.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/LuaLibrary.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Notification.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Notification.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Notification.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Notification.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/OneOpSpace.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/OneOpSpace.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/OneOpSpace.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/OneOpSpace.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Player.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Player.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Player.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Player.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/PlayerLuaLibrary.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/PlayerLuaLibrary.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/PlayerLuaLibrary.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/PlayerLuaLibrary.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Property.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Property.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Property.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Property.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/PropertyLoader.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/PropertyLoader.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/PropertyLoader.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/PropertyLoader.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/PropertyOpMenu.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/PropertyOpMenu.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/PropertyOpMenu.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/PropertyOpMenu.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/PropertySpace.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/PropertySpace.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/PropertySpace.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/PropertySpace.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/RailroadProperty.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/RailroadProperty.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/RailroadProperty.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/RailroadProperty.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Resources.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Resources.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Resources.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Resources.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Sprite.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Sprite.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Sprite.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/Sprite.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/StandardProperty.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/StandardProperty.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/StandardProperty.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/StandardProperty.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/TitleScreen.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/TitleScreen.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/TitleScreen.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/TitleScreen.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/UtilityProperty.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/UtilityProperty.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/UtilityProperty.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/UtilityProperty.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/pkg-summary.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/pkg-summary.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/quick-wins.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/quick-wins.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/test-pkg-summary.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/test-pkg-summary.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/top-risks.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/core/top-risks.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/dashboard.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/dashboard.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/classComplexityChart.png" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/classComplexityChart.png" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/classDistrubutionChart.png" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/classDistrubutionChart.png" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart0.png" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart0.png" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart1.png" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart1.png" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart10.png" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart10.png" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart2.png" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart2.png" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart3.png" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart3.png" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart4.png" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart4.png" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart5.png" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart5.png" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart6.png" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart6.png" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart7.png" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart7.png" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart8.png" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart8.png" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart9.png" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/img/srcFileCovDistChart9.png" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/index.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/index.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/jit.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/jit.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/jquery-1.8.3.min.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/jquery-1.8.3.min.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/package-nodes-tree.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/package-nodes-tree.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/pkg-summary.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/pkg-summary.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/project.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/project.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/quick-wins.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/quick-wins.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/style.css" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/style.css" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test-pkg-summary.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test-pkg-summary.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestCard.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestCard.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestCard.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestCard.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestCardSpace.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestCardSpace.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestCardSpace.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestCardSpace.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestDie.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestDie.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestDie.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestDie.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestDie_testGettersAndSetters_2.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestDie_testGettersAndSetters_2.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestPlayer.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestPlayer.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestPlayer.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestPlayer.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestRailroadProperty.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestRailroadProperty.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestRailroadProperty.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestRailroadProperty.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestSprite.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestSprite.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestSprite.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestSprite.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestStandardProperty.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestStandardProperty.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestStandardProperty.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestStandardProperty.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestStandardProperty_testRent_9.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestStandardProperty_testRent_9.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestUtilityProperty.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestUtilityProperty.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestUtilityProperty.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/TestUtilityProperty.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/test-TestCard.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/test-TestCard.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/test-TestCardSpace.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/test-TestCardSpace.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/test-TestDie.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/test-TestDie.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/test-TestPlayer.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/test-TestPlayer.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/test-TestRailroadProperty.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/test-TestRailroadProperty.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/test-TestSprite.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/test-TestSprite.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/test-TestStandardProperty.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/test-TestStandardProperty.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/test-TestUtilityProperty.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/test-TestUtilityProperty.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/test-pkg-summary.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/test-pkg-summary.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/testsrc-pkg-summary.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/test/testsrc-pkg-summary.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/testsrc-agg-pkgs.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/testsrc-agg-pkgs.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/testsrc-pkg-summary.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/testsrc-pkg-summary.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/top-risks.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/top-risks.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/tree.css" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/tree.css" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/treemap-dash-json.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/treemap-dash-json.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/treemap-json.js" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/treemap-json.js" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/treemap.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/clover_html/treemap.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/Monopoly Test/Class Tests.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/Monopoly Test/Class Tests.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/Monopoly Test/Class Tests.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/Monopoly Test/Class Tests.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/Monopoly Test/testng-failed.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/Monopoly Test/testng-failed.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/emailable-report.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/emailable-report.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/index.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/index.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestCard.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestCard.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestCardSpace.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestCardSpace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestDie.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestDie.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestPlayer.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestPlayer.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestRailroadProperty.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestRailroadProperty.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestSprite.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestSprite.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestStandardProperty.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestStandardProperty.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/classes.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/classes.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/index.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/index.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/main.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/main.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/methods-alphabetical.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/methods-alphabetical.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/methods-not-run.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/methods-not-run.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/methods.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/methods.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/testng.xml.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/testng.xml.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/toc.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/toc.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/index.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/index.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/testng-failed.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/testng-failed.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/testng-results.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/testng-results.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/core/App.java" afterPath="$PROJECT_DIR$/src/core/App.java" />
+      <change beforePath="$PROJECT_DIR$/src/core/GameScreen.java" afterPath="$PROJECT_DIR$/src/core/GameScreen.java" />
       <change beforePath="$PROJECT_DIR$/src/core/Player.java" afterPath="$PROJECT_DIR$/src/core/Player.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -166,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Monopoly2$TestAll.coverage" NAME="TestAll Coverage Results" MODIFIED="1524766723168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Monopoly2$TestAll.coverage" NAME="TestAll Coverage Results" MODIFIED="1524767812452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>core.Player</FILTER>
       <FILTER>core.Sprite</FILTER>
       <FILTER>core.StandardProperty</FILTER>
@@ -185,19 +34,51 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="363">
+              <caret line="119" column="79" lean-forward="true" selection-start-line="119" selection-start-column="79" selection-end-line="119" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameScreen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/GameScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="341" column="37" lean-forward="false" selection-start-line="341" selection-start-column="37" selection-end-line="341" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoardLuaLibrary.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/BoardLuaLibrary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-623">
               <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestDie.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/TestDie.java">
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state relative-caret-position="68">
+              <caret line="208" column="94" lean-forward="false" selection-start-line="208" selection-start-column="94" selection-end-line="208" selection-end-column="94" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerLuaLibrary.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/core/PlayerLuaLibrary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="198" column="54" lean-forward="false" selection-start-line="198" selection-start-column="48" selection-end-line="198" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -225,41 +106,51 @@
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+            <state relative-caret-position="214">
+              <caret line="51" column="10" lean-forward="false" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="10" />
               <folding>
-                <element signature="e#1883#1884#0" expanded="true" />
-                <element signature="e#1902#1903#0" expanded="true" />
-                <element signature="e#1999#2000#0" expanded="true" />
-                <element signature="e#2030#2031#0" expanded="true" />
-                <element signature="e#2135#2136#0" expanded="true" />
-                <element signature="e#2156#2157#0" expanded="true" />
-                <element signature="e#2200#2201#0" expanded="true" />
-                <element signature="e#2228#2229#0" expanded="true" />
-                <element signature="e#2442#2443#0" expanded="true" />
-                <element signature="e#2473#2474#0" expanded="true" />
-                <element signature="e#2566#2567#0" expanded="true" />
-                <element signature="e#2590#2591#0" expanded="true" />
-                <element signature="e#2679#2680#0" expanded="true" />
-                <element signature="e#2706#2707#0" expanded="true" />
-                <element signature="e#2743#2744#0" expanded="true" />
-                <element signature="e#2768#2769#0" expanded="true" />
-                <element signature="e#2905#2906#0" expanded="true" />
-                <element signature="e#2936#2937#0" expanded="true" />
-                <element signature="e#3091#3092#0" expanded="true" />
-                <element signature="e#3125#3126#0" expanded="true" />
-                <element signature="e#3263#3264#0" expanded="true" />
-                <element signature="e#3287#3288#0" expanded="true" />
+                <element signature="e#1984#1985#0" expanded="true" />
+                <element signature="e#2003#2004#0" expanded="true" />
+                <element signature="e#2100#2101#0" expanded="true" />
+                <element signature="e#2131#2132#0" expanded="true" />
+                <element signature="e#2236#2237#0" expanded="true" />
+                <element signature="e#2257#2258#0" expanded="true" />
+                <element signature="e#2301#2302#0" expanded="true" />
+                <element signature="e#2329#2330#0" expanded="true" />
+                <element signature="e#2543#2544#0" expanded="true" />
+                <element signature="e#2574#2575#0" expanded="true" />
+                <element signature="e#2667#2668#0" expanded="true" />
+                <element signature="e#2691#2692#0" expanded="true" />
+                <element signature="e#2780#2781#0" expanded="true" />
+                <element signature="e#2807#2808#0" expanded="true" />
+                <element signature="e#2844#2845#0" expanded="true" />
+                <element signature="e#2869#2870#0" expanded="true" />
+                <element signature="e#3006#3007#0" expanded="true" />
+                <element signature="e#3037#3038#0" expanded="true" />
+                <element signature="e#3192#3193#0" expanded="true" />
+                <element signature="e#3226#3227#0" expanded="true" />
+                <element signature="e#3364#3365#0" expanded="true" />
+                <element signature="e#3388#3389#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Notification.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/core/Notification.java">
+      <file leaf-file-name="Hud.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/Hud.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="50" column="25" lean-forward="false" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="25" />
+            <state relative-caret-position="187">
+              <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PropertyOpMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/PropertyOpMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -272,6 +163,8 @@
       <find>/script</find>
       <find>/config/</find>
       <find>/</find>
+      <find>stillInGame</find>
+      <find>draw</find>
     </findStrings>
     <replaceStrings>
       <replace>/resources/images</replace>
@@ -301,10 +194,12 @@
         <option value="$PROJECT_DIR$/src/GameScreen.java" />
         <option value="$PROJECT_DIR$/src/Board.java" />
         <option value="$PROJECT_DIR$/src/core/Player.java" />
+        <option value="$PROJECT_DIR$/src/core/App.java" />
+        <option value="$PROJECT_DIR$/src/core/GameScreen.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="580" />
     <option name="y" value="220" />
     <option name="width" value="1400" />
@@ -605,12 +500,16 @@
     <history-entry file="TestAll - 2018.04.26 at 11h 18m 45s.xml">
       <configuration name="TestAll" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="TestAll - 2018.04.26 at 11h 36m 54s.xml">
+      <configuration name="TestAll" configurationId="TestNG" />
+    </history-entry>
     <history-entry file="TestCard - 2018.04.19 at 10h 30m 40s.xml">
       <configuration name="TestCard" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -622,12 +521,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -639,7 +539,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -652,38 +551,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/core/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/TestDie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/TestCardSpace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/TestDie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -784,42 +651,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Notification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="50" column="11" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Hud.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/PropertyOpMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="208" column="94" lean-forward="false" selection-start-line="208" selection-start-column="94" selection-end-line="208" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="119" column="79" lean-forward="true" selection-start-line="119" selection-start-column="79" selection-end-line="119" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/GameScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="341" column="37" lean-forward="false" selection-start-line="341" selection-start-column="37" selection-end-line="341" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/BoardLuaLibrary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-623">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+        <state relative-caret-position="214">
+          <caret line="51" column="10" lean-forward="false" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="10" />
           <folding>
-            <element signature="e#1883#1884#0" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
-            <element signature="e#1999#2000#0" expanded="true" />
-            <element signature="e#2030#2031#0" expanded="true" />
-            <element signature="e#2135#2136#0" expanded="true" />
-            <element signature="e#2156#2157#0" expanded="true" />
-            <element signature="e#2200#2201#0" expanded="true" />
-            <element signature="e#2228#2229#0" expanded="true" />
-            <element signature="e#2442#2443#0" expanded="true" />
-            <element signature="e#2473#2474#0" expanded="true" />
-            <element signature="e#2566#2567#0" expanded="true" />
-            <element signature="e#2590#2591#0" expanded="true" />
-            <element signature="e#2679#2680#0" expanded="true" />
-            <element signature="e#2706#2707#0" expanded="true" />
-            <element signature="e#2743#2744#0" expanded="true" />
-            <element signature="e#2768#2769#0" expanded="true" />
-            <element signature="e#2905#2906#0" expanded="true" />
-            <element signature="e#2936#2937#0" expanded="true" />
-            <element signature="e#3091#3092#0" expanded="true" />
-            <element signature="e#3125#3126#0" expanded="true" />
-            <element signature="e#3263#3264#0" expanded="true" />
-            <element signature="e#3287#3288#0" expanded="true" />
+            <element signature="e#1984#1985#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#2100#2101#0" expanded="true" />
+            <element signature="e#2131#2132#0" expanded="true" />
+            <element signature="e#2236#2237#0" expanded="true" />
+            <element signature="e#2257#2258#0" expanded="true" />
+            <element signature="e#2301#2302#0" expanded="true" />
+            <element signature="e#2329#2330#0" expanded="true" />
+            <element signature="e#2543#2544#0" expanded="true" />
+            <element signature="e#2574#2575#0" expanded="true" />
+            <element signature="e#2667#2668#0" expanded="true" />
+            <element signature="e#2691#2692#0" expanded="true" />
+            <element signature="e#2780#2781#0" expanded="true" />
+            <element signature="e#2807#2808#0" expanded="true" />
+            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="e#2869#2870#0" expanded="true" />
+            <element signature="e#3006#3007#0" expanded="true" />
+            <element signature="e#3037#3038#0" expanded="true" />
+            <element signature="e#3192#3193#0" expanded="true" />
+            <element signature="e#3226#3227#0" expanded="true" />
+            <element signature="e#3364#3365#0" expanded="true" />
+            <element signature="e#3388#3389#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Notification.java">
+    <entry file="file://$PROJECT_DIR$/src/core/PlayerLuaLibrary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="50" column="25" lean-forward="false" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="312">
+          <caret line="198" column="54" lean-forward="false" selection-start-line="198" selection-start-column="48" selection-end-line="198" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

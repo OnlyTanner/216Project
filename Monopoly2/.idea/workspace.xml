@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e08eecd5-0486-4410-8927-5e6e41aa5495" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/classes/core/App.class" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/classes/core/App.class" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/classes/core/GameScreen.class" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/classes/core/GameScreen.class" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/classes/core/Hud.class" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/classes/core/Hud.class" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/classes/core/Player.class" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/classes/core/Player.class" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/Monopoly Test/Class Tests.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/Monopoly Test/Class Tests.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/Monopoly Test/Class Tests.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/Monopoly Test/Class Tests.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/Monopoly Test/testng-failed.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/Monopoly Test/testng-failed.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/emailable-report.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/emailable-report.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/index.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/index.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.OneOpSpaceTest.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.OneOpSpaceTest.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.PlayerTest2.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.PlayerTest2.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestCard.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestCard.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestCardSpace.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestCardSpace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestDie.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestDie.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestPlayer.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestPlayer.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestRailroadProperty.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestRailroadProperty.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestSprite.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestSprite.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestStandardProperty.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/junitreports/TEST-test.TestStandardProperty.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/classes.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/classes.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/index.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/index.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/main.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/main.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/methods-alphabetical.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/methods-alphabetical.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/methods-not-run.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/methods-not-run.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/methods.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/methods.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/toc.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/Monopoly Test/toc.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/index.html" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/old/index.html" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/testng-failed.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/testng-failed.xml" />
-      <change beforePath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/testng-results.xml" afterPath="$PROJECT_DIR$/../Clover/CloverReport/build/testresults/testng-results.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/core/GameScreen.java" afterPath="$PROJECT_DIR$/src/core/GameScreen.java" />
-      <change beforePath="$PROJECT_DIR$/src/core/Player.java" afterPath="$PROJECT_DIR$/src/core/Player.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/PlayerTest2.java" afterPath="$PROJECT_DIR$/src/test/PlayerTest2.java" />
       <change beforePath="$PROJECT_DIR$/src/test/TestPlayer.java" afterPath="$PROJECT_DIR$/src/test/TestPlayer.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestRailroadProperty.java" afterPath="$PROJECT_DIR$/src/test/TestRailroadProperty.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestStandardProperty.java" afterPath="$PROJECT_DIR$/src/test/TestStandardProperty.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestUtilityProperty.java" afterPath="$PROJECT_DIR$/src/test/TestUtilityProperty.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -128,7 +93,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameScreen.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameScreen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/GameScreen.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="296">
@@ -180,11 +145,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestPlayer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestPlayer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/TestPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1642">
-              <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+            <state relative-caret-position="255">
+              <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -298,12 +263,12 @@
         <option value="$PROJECT_DIR$/src/Board.java" />
         <option value="$PROJECT_DIR$/src/core/App.java" />
         <option value="$PROJECT_DIR$/src/core/Player.java" />
-        <option value="$PROJECT_DIR$/src/test/TestPlayer.java" />
         <option value="$PROJECT_DIR$/src/test/TestUtilityProperty.java" />
         <option value="$PROJECT_DIR$/src/test/PlayerTest2.java" />
         <option value="$PROJECT_DIR$/src/test/TestRailroadProperty.java" />
         <option value="$PROJECT_DIR$/src/test/TestStandardProperty.java" />
         <option value="$PROJECT_DIR$/src/core/GameScreen.java" />
+        <option value="$PROJECT_DIR$/src/test/TestPlayer.java" />
       </list>
     </option>
   </component>
@@ -564,8 +529,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.App (1)" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.TestAll" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.TestAll" />
+        <item index="1" class="java.lang.String" itemvalue="Application.App (1)" />
         <item index="2" class="java.lang.String" itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -587,12 +552,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestAll - 2018.04.19 at 12h 15m 14s.xml">
-      <configuration name="TestAll" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestAll - 2018.04.19 at 13h 56m 12s.xml">
-      <configuration name="TestAll" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestAll - 2018.04.26 at 11h 05m 57s.xml">
       <configuration name="TestAll" configurationId="TestNG" />
     </history-entry>
@@ -612,6 +571,12 @@
       <configuration name="TestAll" configurationId="TestNG" />
     </history-entry>
     <history-entry file="TestAll - 2018.04.27 at 09h 35m 04s.xml">
+      <configuration name="TestAll" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestAll - 2018.04.27 at 10h 25m 31s.xml">
+      <configuration name="TestAll" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestAll - 2018.04.27 at 10h 26m 15s.xml">
       <configuration name="TestAll" configurationId="TestNG" />
     </history-entry>
     <history-entry file="TestCard - 2018.04.19 at 10h 30m 40s.xml">
@@ -827,14 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/TestPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1642">
-          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/TestUtilityProperty.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
@@ -889,6 +846,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
           <caret line="399" column="39" lean-forward="false" selection-start-line="399" selection-start-column="39" selection-end-line="399" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/TestPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
           <folding />
         </state>
       </provider>

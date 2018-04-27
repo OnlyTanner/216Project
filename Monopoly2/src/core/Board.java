@@ -14,6 +14,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Vector;
 
 public class Board {
 
@@ -193,7 +194,7 @@ public class Board {
      * @param g graphics context
      * @param observer image observer
      */
-    public void draw(Graphics g, ImageObserver observer, ArrayList<Player> players, int currPlayer) {
+    public void draw(Graphics g, ImageObserver observer, Vector<Player> players, int currPlayer) {
         center.draw(g, observer);
         for(BoardSpace space : spaces) {
             // If the space is a property space, mark it in a way depending on who owns it
@@ -225,7 +226,7 @@ public class Board {
      * @param g graphics context
      * @param observer image observer
      */
-    public void drawPlayers(ArrayList<Player> players, Graphics g, ImageObserver observer) {
+    public void drawPlayers(Vector<Player> players, Graphics g, ImageObserver observer) {
         // Maps to keep track of how many players are on one space
         Map<BoardSpace, Integer> playersOnSpaces = new HashMap<>();
         Map<BoardSpace, Integer> playersDrawnOnSpaces = new HashMap<>();

@@ -3,20 +3,22 @@ package core;
 import org.json.JSONException;
 
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.image.ImageObserver;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Vector;
 
 /**
  * Manages the main game screen.
  */
 public class GameScreen {
-    private static final boolean DEBUG_MODE = true;
+    private static final boolean DEBUG_MODE = false;
     private Board board;
 
-    private ArrayList<Player> players;
+    private Vector<Player> players;
     private int currPlayer;
     private int moveAmount;
     private long lastMove;
@@ -32,6 +34,7 @@ public class GameScreen {
     private Button auctionButton;
     private Button continueButton;
     private Button payRentButton;
+    private Button viewPlayerDataButton;
 
     private boolean showDie;
     private Die die1;
@@ -45,13 +48,15 @@ public class GameScreen {
     private Graphics g;
     private ImageObserver observer;
 
+    private JFrame playerDataWindow;
+
     public GameScreen(JFrame parent, int screenWidth, int screenHeight) throws IOException, FontFormatException, JSONException {
         this.screenWidth = screenWidth;
         this.screenHeight = screenHeight;
 
         board = new Board(140, 140, "/resources/config/board.json", parent);
         BoardLuaLibrary.setBoard(board);
-        players = new ArrayList<>();
+        players = new Vector<>();
 
         // Initialize the heads up display
         hud = new Hud(screenWidth, screenHeight);
@@ -98,12 +103,29 @@ public class GameScreen {
         payRentButton.setActive(false);
         parent.addMouseListener(payRentButton);
 
+        // Create the view player data button
+        viewPlayerDataButton = new Button(0, 0, 164, 80);
+        parent.addMouseListener(viewPlayerDataButton);
+
+        viewPlayerDataButton.setRunnable(() -> {
+            try {
+                displayPlayerWindow();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (FontFormatException e) {
+                e.printStackTrace();
+            }
+        });
+
         die1 = new Die();
         die1.setX((screenWidth / 2) - die1.getWidth() - 10);
         die1.setY((screenHeight / 2) - (die1.getHeight() / 2));
         die2 = new Die();
         die2.setX(die1.getX() + die2.getWidth() + 10);
         die2.setY(die1.getY());
+
+        playerDataWindow = new JFrame("Player Stats");
+        playerDataWindow.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**
@@ -133,6 +155,7 @@ public class GameScreen {
             Player player = new Player(token, (byte)(i + 1));
             players.add(player);
         }
+        viewPlayerDataButton.setActive(true);
 
         currPlayer = 0;
         PlayerLuaLibrary.setPlayers(players);
@@ -342,6 +365,15 @@ public class GameScreen {
         PropertyOpMenu.setActive(true);
 
         removePlayers();
+
+        try {
+            if (playerDataWindow.isShowing())
+                displayPlayerWindow();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (FontFormatException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -407,7 +439,53 @@ public class GameScreen {
 
         if (players.size() == 1) {
             Notification.notify("Game Over. Player " + players.get(currPlayer).getID() + " has won!");
+            playerDataWindow.dispose();
             App.RESET = true;
         }
+    }
+
+    public void displayPlayerWindow() throws IOException, FontFormatException {
+        playerDataWindow.getContentPane().removeAll();
+
+        JPanel panel = new JPanel();
+        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+        panel.setBorder(new EmptyBorder(15, 15, 15, 15));
+        panel.setBackground(new Color(205, 230, 208));
+
+        for (int i = 0; i < players.size(); i++) {
+            JLabel p = new JLabel("--- Player " + players.get(i).getID() + " ---");
+            p.setAlignmentX(Component.CENTER_ALIGNMENT);
+            p.setFont(Resources.getFont("/resources/fonts/kabel.ttf").deriveFont(32.0f));
+            panel.add(p);
+
+            JLabel money = new JLabel("Money: $" + players.get(i).get_money());
+            money.setAlignmentX(Component.CENTER_ALIGNMENT);
+            money.setFont(Resources.getFont("/resources/fonts/roboto-bold.ttf").deriveFont(22.0f));
+            panel.add(money);
+
+            JLabel properties = new JLabel("Number of Properties: " + players.get(i).getProperties().size());
+            properties.setAlignmentX(Component.CENTER_ALIGNMENT);
+            properties.setFont(Resources.getFont("/resources/fonts/roboto-bold.ttf").deriveFont(22.0f));
+            panel.add(properties);
+
+            JLabel ls = new JLabel("List of Properties...");
+            ls.setAlignmentX(Component.CENTER_ALIGNMENT);
+            ls.setFont(Resources.getFont("/resources/fonts/roboto-bold.ttf").deriveFont(22.0f));
+            panel.add(ls);
+
+            for (int j = 0; j < players.get(i).getProperties().size(); j++) {
+                String list = players.get(i).getProperties().get(j).getName() + "\n";
+                JLabel propertiesList = new JLabel(list);
+                propertiesList.setAlignmentX(Component.CENTER_ALIGNMENT);
+                propertiesList.setFont(Resources.getFont("/resources/fonts/roboto-bold.ttf").deriveFont(16.0f));
+                panel.add(propertiesList);
+            }
+
+            panel.add(new JLabel(" "));
+        }
+
+        playerDataWindow.add(panel);
+        playerDataWindow.pack();
+        playerDataWindow.setVisible(true);
     }
 }

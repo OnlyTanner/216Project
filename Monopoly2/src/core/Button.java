@@ -26,13 +26,20 @@ public class Button implements MouseListener {
 	private boolean pressed;
 	private boolean active;
 
+	public Button(int x, int y, int width, int height) {
+	    this.x = x;
+	    this.y = y;
+
+        this.bounds = new Rectangle(x, y, width, height);
+    }
+
 	/**
 	 * Creates a new button at 0, 0 with the given text.
 	 * @param text The text to display on the button
 	 * @throws IOException, FontFormatException from lacking resources. These should bubble up to the top
      */
 	public Button(String text) throws IOException, FontFormatException {
-		this(0, 0, text, 18.09f);
+		this(0, 0, text, 18.0f);
 	}
 
 	/**

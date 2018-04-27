@@ -6,6 +6,7 @@ import org.luaj.vm2.lib.OneArgFunction;
 import org.luaj.vm2.lib.TwoArgFunction;
 
 import java.util.ArrayList;
+import java.util.Vector;
 
 /**
  * A library that gives Lua scripts the power to change the state of a player
@@ -14,14 +15,14 @@ import java.util.ArrayList;
 public class PlayerLuaLibrary extends TwoArgFunction {
 
 	private static int currPlayer = 0;
-	private static ArrayList<Player> players = null;
+	private static Vector<Player> players = null;
 
 	/**
 	 * Returns the players that the Lua script may modify.
 	 *
 	 * @return player to be modified
 	 */
-	public static ArrayList<Player> getPlayers() {
+	public static Vector<Player> getPlayers() {
 		return players;
 	}
 
@@ -30,7 +31,7 @@ public class PlayerLuaLibrary extends TwoArgFunction {
 	 *
 	 * @param players players to be modified
 	 */
-	public static void setPlayers(ArrayList<Player> players) {
+	public static void setPlayers(Vector<Player> players) {
 		PlayerLuaLibrary.players = players;
 	}
 

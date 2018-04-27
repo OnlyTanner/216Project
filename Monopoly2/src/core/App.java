@@ -17,6 +17,8 @@ public class App extends JFrame {
     // Desired framerate
     private static final double FPS = 60.0;
 
+    public static boolean RESET = false;
+
     // Keeps track of how many times the program failed to keep up with the desired framerate.
     private int slowCnt = 0;
 
@@ -67,12 +69,19 @@ public class App extends JFrame {
      * The main execution loop.
      */
     private void mainLoop() throws IOException, FontFormatException, InterruptedException {
-        while(true) {
+        while(!RESET) {
             long frameStart = System.currentTimeMillis();
 
             draw();
 
             limitFramerate(frameStart);
+        }
+        try {
+            RESET = false;
+            this.dispose();
+            new App();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 

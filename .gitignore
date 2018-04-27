@@ -3,3 +3,5 @@
 
 # ignore compiled files
 out/
+Monopoly2/.idea/workspace.xml
+Monopoly2/Monopoly2.iml

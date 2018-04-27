@@ -187,12 +187,16 @@ public class GameScreen {
         }
 
         PropertyOpMenu.setActive(false);
+
+        removePlayers();
     }
 
     /**
      * Does the required tasks of the space the current player is on.
      */
     private void processSpace() {
+        removePlayers();
+        
         showDie = false;
         board.zoomPlayer(players.get(currPlayer), screenWidth, screenHeight);
         PropertyOpMenu.setActive(false);
@@ -292,6 +296,8 @@ public class GameScreen {
                 turnOver();
             });
         }
+
+        removePlayers();
     }
 
     private Player getOwner(Property property) {
@@ -331,21 +337,13 @@ public class GameScreen {
             repeatTurn = false;
         }
 
-        if (!players.get(currPlayer).getStillInGame()) {
-            players.remove(currPlayer);
-            board.draw(g, observer, players, currPlayer);
-            board.drawPlayers(players, g, observer);
-        }
-
-        if (players.size() == 1)
-            Notification.notify("Game Over. Player " + currPlayer + " has won!");
-            //Need a game over screen
-
         PlayerLuaLibrary.setCurrPlayer(currPlayer);
         hud.setCurrPlayer(players.get(currPlayer), currPlayer + 1);
         PropertyOpMenu.setPlayer(players.get(currPlayer));
 
         PropertyOpMenu.setActive(true);
+
+        removePlayers();
     }
 
     /**
@@ -395,6 +393,22 @@ public class GameScreen {
 
         if(currCard != null) {
             currCard.getSprite().draw(g, observer);
+        }
+    }
+
+    public void removePlayers() {
+        if (!players.get(currPlayer).getStillInGame()) {
+            players.remove(currPlayer);
+            board.draw(g, observer, players, currPlayer);
+            board.drawPlayers(players, g, observer);
+        }
+
+        if (currPlayer >= players.size())
+            currPlayer = 0;
+
+        if (players.size() == 1) {
+            Notification.notify("Game Over. Player " + (currPlayer + 1) + " has won!");
+            App.RESET = true;
         }
     }
 }

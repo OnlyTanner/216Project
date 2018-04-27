@@ -41,7 +41,7 @@ public class Hud {
         g.setColor(Color.white);
         ((Graphics2D) g).setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
 
-        String playerIndicator = "core.Player " + playerNum;
+        String playerIndicator = "Player " + playerNum;
         int width = fm.stringWidth(playerIndicator);
         int height = fm.getHeight();
         g.drawString(playerIndicator, leftTab.getX() + (leftTab.getWidth() / 2) - (width / 2),

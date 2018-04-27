@@ -9,4 +9,4 @@ if lastPos > player.getPlayerPos(player.currPlayer()) then
     -- The player passed Go
     player.giveMoney(player.currPlayer(), 200)
 end
-lib.notify("core.Player " .. tostring(player.currPlayer() + 1) .. " was sent to jail!")
+lib.notify("Player " .. tostring(player.currPlayer() + 1) .. " was sent to jail!")

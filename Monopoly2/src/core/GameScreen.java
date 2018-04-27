@@ -177,7 +177,7 @@ public class GameScreen {
             if(amount1 == amount2) {
                 // Release the player if they rolled doubles
                 players.get(currPlayer).setTurnsLeftInJail(0);
-                Notification.notify("core.Player " + (currPlayer + 1) + " was released from jail!");
+                Notification.notify("Player " + (currPlayer + 1) + " was released from jail!");
                 moveAmount = amount1 + amount2;
             } else {
                 players.get(currPlayer).decTurnsLeftInJail();
@@ -195,11 +195,10 @@ public class GameScreen {
      * Does the required tasks of the space the current player is on.
      */
     private void processSpace() {
-        removePlayers();
-        
         showDie = false;
         board.zoomPlayer(players.get(currPlayer), screenWidth, screenHeight);
         PropertyOpMenu.setActive(false);
+        removePlayers();
 
         // Add menu options based on what space was hit
         BoardSpace space = board.getBoardSpace(players.get(currPlayer));
@@ -241,7 +240,7 @@ public class GameScreen {
                     } else {
                         players.get(currPlayer).takeMoney(propertySpace.getProperty().getCost());
                         players.get(currPlayer).addProperty(propertySpace.getProperty());
-                        Notification.notify("core.Player " + (currPlayer + 1) + " bought " + propertySpace.getName() + "!");
+                        Notification.notify("Player " + (currPlayer + 1) + " bought " + propertySpace.getName() + "!");
                         resetButtons();
                         rollButton.setActive(true);
                         board.zoomOut();
@@ -273,6 +272,7 @@ public class GameScreen {
                     payRentButton.setRunnable(() -> {
                         int rent = propertySpace.getProperty().getRent(owner, lastRoll);
                         players.get(currPlayer).takeMoney(rent);
+                        removePlayers();
                         owner.giveMoney(rent);
 
                         resetButtons();
@@ -399,6 +399,7 @@ public class GameScreen {
     public void removePlayers() {
         if (!players.get(currPlayer).getStillInGame()) {
             players.remove(currPlayer);
+            Notification.notify("Player " + (currPlayer + 1) + " has gone bankrupt!");
             board.draw(g, observer, players, currPlayer);
             board.drawPlayers(players, g, observer);
         }

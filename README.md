@@ -6,13 +6,15 @@ This game simulates the popular board game Monopoly. The game is mostly written 
 
 
 ## Bugs In Progress
-* The game cannot be won in its current state (in progress)
-* Player's pieces and properties are not removed after they go bankrupt (in progress)
+* ~~The game cannot be won in its current state~~
+* Player's pieces and properties are not removed after they go bankrupt (in progress, mostly working)
+* ~~Various mutator methods don't do appropriate checks before changing instance variables~~
 * Player's don't always roll while in jail
 * No option to use a get out of jail card [always used by default]
 * Multiple chance/community chest cards are broken
 
 ## Bugs Fixed
+* **Game can now be won**
 * All mutator methods in Player now handle inputs appropriately [all unit tests pass now]
 
 ## Enhancements

@@ -50,7 +50,7 @@ public class TestStandardProperty {
     @Test
     public void testRent() {
         try {
-            Assert.assertEquals(prop.getRent(new Player(1), 4), 15);
+            Assert.assertEquals(prop.getRent(new Player(1, (byte)0), 4), 15);
         } catch (IOException e) {
             Assert.fail("Unexpected IOException.", e);
         }

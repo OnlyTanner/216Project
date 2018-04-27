@@ -13,7 +13,7 @@ import java.util.Random;
  * Manages the main game screen.
  */
 public class GameScreen {
-
+    private static final boolean DEBUG_MODE = true;
     private Board board;
 
     private ArrayList<Player> players;
@@ -130,7 +130,7 @@ public class GameScreen {
                 }
             } while(taken);
             chosenTokens.add(token);
-            Player player = new Player(token);
+            Player player = new Player(token, (byte)(i + 1));
             players.add(player);
         }
 
@@ -138,7 +138,7 @@ public class GameScreen {
         PlayerLuaLibrary.setPlayers(players);
         PlayerLuaLibrary.setCurrPlayer(currPlayer);
         PropertyOpMenu.setPlayer(players.get(currPlayer));
-        hud.setCurrPlayer(players.get(currPlayer), currPlayer + 1);
+        hud.setCurrPlayer(players.get(currPlayer), players.get(currPlayer).getID());
 
         rollButton.setActive(true);
 
@@ -177,7 +177,7 @@ public class GameScreen {
             if(amount1 == amount2) {
                 // Release the player if they rolled doubles
                 players.get(currPlayer).setTurnsLeftInJail(0);
-                Notification.notify("Player " + (currPlayer + 1) + " was released from jail!");
+                Notification.notify("Player " + players.get(currPlayer).getID() + " was released from jail!");
                 moveAmount = amount1 + amount2;
             } else {
                 players.get(currPlayer).decTurnsLeftInJail();
@@ -198,7 +198,6 @@ public class GameScreen {
         showDie = false;
         board.zoomPlayer(players.get(currPlayer), screenWidth, screenHeight);
         PropertyOpMenu.setActive(false);
-        removePlayers();
 
         // Add menu options based on what space was hit
         BoardSpace space = board.getBoardSpace(players.get(currPlayer));
@@ -240,7 +239,7 @@ public class GameScreen {
                     } else {
                         players.get(currPlayer).takeMoney(propertySpace.getProperty().getCost());
                         players.get(currPlayer).addProperty(propertySpace.getProperty());
-                        Notification.notify("Player " + (currPlayer + 1) + " bought " + propertySpace.getName() + "!");
+                        Notification.notify("Player " + players.get(currPlayer).getID() + " bought " + propertySpace.getName() + "!");
                         resetButtons();
                         rollButton.setActive(true);
                         board.zoomOut();
@@ -271,10 +270,9 @@ public class GameScreen {
 
                     payRentButton.setRunnable(() -> {
                         int rent = propertySpace.getProperty().getRent(owner, lastRoll);
-                        players.get(currPlayer).takeMoney(rent);
-                        removePlayers();
+                        players.get(currPlayer).takeMoney(rent * (DEBUG_MODE ? 200 : 1));
                         owner.giveMoney(rent);
-
+                        removePlayers();
                         resetButtons();
                         rollButton.setActive(true);
                         board.zoomOut();
@@ -338,7 +336,7 @@ public class GameScreen {
         }
 
         PlayerLuaLibrary.setCurrPlayer(currPlayer);
-        hud.setCurrPlayer(players.get(currPlayer), currPlayer + 1);
+        hud.setCurrPlayer(players.get(currPlayer), players.get(currPlayer).getID());
         PropertyOpMenu.setPlayer(players.get(currPlayer));
 
         PropertyOpMenu.setActive(true);
@@ -398,8 +396,8 @@ public class GameScreen {
 
     public void removePlayers() {
         if (!players.get(currPlayer).getStillInGame()) {
+            Notification.notify("Player " + players.get(currPlayer).getID() + " has gone bankrupt!");
             players.remove(currPlayer);
-            Notification.notify("Player " + (currPlayer + 1) + " has gone bankrupt!");
             board.draw(g, observer, players, currPlayer);
             board.drawPlayers(players, g, observer);
         }
@@ -408,7 +406,7 @@ public class GameScreen {
             currPlayer = 0;
 
         if (players.size() == 1) {
-            Notification.notify("Game Over. Player " + (currPlayer + 1) + " has won!");
+            Notification.notify("Game Over. Player " + players.get(currPlayer).getID() + " has won!");
             App.RESET = true;
         }
     }

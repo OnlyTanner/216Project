@@ -46,7 +46,7 @@ public class TestUtilityProperty {
 
     @Test
     public void testGetRent() {
-        Player p = new Player();
+        Player p = new Player((byte)0);
         Assert.assertEquals(prop.getRent(p, 2), 30);
         Assert.assertEquals(prop.getRent(p, 12), 180);
     }

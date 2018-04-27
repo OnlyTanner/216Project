@@ -46,7 +46,7 @@ public class TestRailroadProperty {
 
     @Test
     public void testGetRent() {
-        Player p = new Player();
+        Player p = new Player((byte)0);
         Assert.assertEquals(prop.getRent(p, 2), 15);
         Assert.assertEquals(prop.getRent(p, 12), 15); //rent isn't affected by the die roll
     }

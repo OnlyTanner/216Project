@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">23 methods, 4 failed,  6 skipped,  13 passed</span>
+                    <span class="method-stats">23 methods, 3 failed,  6 skipped,  14 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -113,11 +113,6 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Monopoly_Test" title="test.TestSprite" hash-for-method="testSpriteManipulation">testSpriteManipulation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Monopoly_Test" title="test.TestPlayer" hash-for-method="testTakeMoney">testTakeMoney</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Monopoly_Test -->
@@ -225,6 +220,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Monopoly_Test" title="test.TestPlayer" hash-for-method="testTakeMoney">testTakeMoney</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Monopoly_Test" title="test.TestPlayer" hash-for-method="testTurnsLeftInJail">testTurnsLeftInJail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -245,29 +245,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Monopoly_Test" class="panel Monopoly_Test">
-          <div class="suite-Monopoly_Test-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">test.TestPlayer</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testTakeMoney">
-                  </a> <!-- testTakeMoney -->
-                  <span class="method-name">testTakeMoney</span>
-                  <div class="stack-trace">java.lang.AssertionError: Unexpected exception.
-	at test.TestPlayer.testTakeMoney(Unknown Source)
-Caused by: java.lang.NullPointerException
-	at core.Notification.notify(Unknown Source)
-	at core.Player.takeMoney(Unknown Source)
-	... 25 more
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Monopoly_Test-class-failed -->
           <div class="suite-Monopoly_Test-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
@@ -512,6 +489,13 @@ Caused by: java.lang.NullPointerException
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="testTakeMoney">
+                  </a> <!-- testTakeMoney -->
+                  <span class="method-name">testTakeMoney</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testTurnsLeftInJail">
                   </a> <!-- testTurnsLeftInJail -->
                   <span class="method-name">testTurnsLeftInJail</span>
@@ -640,9 +624,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(23);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testTakeMoney')
-data.setCell(0, 2, 'test.TestPlayer')
-data.setCell(0, 3, 106);
+data.setCell(0, 1, 'testSpriteManipulation')
+data.setCell(0, 2, 'test.TestSprite')
+data.setCell(0, 3, 3);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testGettersAndSetters')
 data.setCell(1, 2, 'test.TestDie')
@@ -652,9 +636,9 @@ data.setCell(2, 1, 'testProperties')
 data.setCell(2, 2, 'test.TestPlayer')
 data.setCell(2, 3, 1);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testSpriteManipulation')
-data.setCell(3, 2, 'test.TestSprite')
-data.setCell(3, 3, 1);
+data.setCell(3, 1, 'testRent')
+data.setCell(3, 2, 'test.TestStandardProperty')
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testSetNum')
 data.setCell(4, 2, 'test.TestDie')
@@ -664,11 +648,11 @@ data.setCell(5, 1, 'testMiscSettersAndGetters')
 data.setCell(5, 2, 'test.TestPlayer')
 data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testGettersAndSetters')
-data.setCell(6, 2, 'test.TestStandardProperty')
+data.setCell(6, 1, 'testTakeMoney')
+data.setCell(6, 2, 'test.TestPlayer')
 data.setCell(6, 3, 0);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testRent')
+data.setCell(7, 1, 'testUpgradeAndDowngrade')
 data.setCell(7, 2, 'test.TestStandardProperty')
 data.setCell(7, 3, 0);
 data.setCell(8, 0, 8)
@@ -688,16 +672,16 @@ data.setCell(11, 1, 'testGetRent')
 data.setCell(11, 2, 'test.TestRailroadProperty')
 data.setCell(11, 3, 0);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'testTurnsLeftInJail')
-data.setCell(12, 2, 'test.TestPlayer')
+data.setCell(12, 1, 'testGettersAndSetters')
+data.setCell(12, 2, 'test.TestStandardProperty')
 data.setCell(12, 3, 0);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'testSetTurnsLeftInJail')
+data.setCell(13, 1, 'testTurnsLeftInJail')
 data.setCell(13, 2, 'test.TestPlayer')
 data.setCell(13, 3, 0);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'testUpgradeAndDowngrade')
-data.setCell(14, 2, 'test.TestStandardProperty')
+data.setCell(14, 1, 'testSetTurnsLeftInJail')
+data.setCell(14, 2, 'test.TestPlayer')
 data.setCell(14, 3, 0);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'testGettersAndSetters')
@@ -712,12 +696,12 @@ data.setCell(17, 1, 'testCardSprite')
 data.setCell(17, 2, 'test.TestCardSpace')
 data.setCell(17, 3, 0);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'testGeterandSetters')
-data.setCell(18, 2, 'test.OneOpSpaceTest')
+data.setCell(18, 1, 'testGetName')
+data.setCell(18, 2, 'test.TestCardSpace')
 data.setCell(18, 3, 0);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'testGetName')
-data.setCell(19, 2, 'test.TestCardSpace')
+data.setCell(19, 1, 'testGeterandSetters')
+data.setCell(19, 2, 'test.OneOpSpaceTest')
 data.setCell(19, 3, 0);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'testCardCnt')
@@ -735,7 +719,7 @@ window.suiteTableData['Monopoly_Test']= { tableData: data, tableDiv: 'times-div-
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 110 ms</span>
+              <span class="suite-total-time">Total running time: 6 ms</span>
               <div id="times-div-Monopoly_Test">
               </div> <!-- times-div-Monopoly_Test -->
             </div> <!-- times-div -->
@@ -803,108 +787,108 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">setUp</span>
-                <span class="method-start">16 ms</span>
+                <span class="method-start">15 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.TestCardSpace</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpBeforeClass</span>
-                <span class="method-start">20 ms</span>
+                <span class="method-start">19 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">setUp</span>
-                <span class="method-start">20 ms</span>
+                <span class="method-start">19 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.TestDie</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpBeforeClass</span>
-                <span class="method-start">23 ms</span>
+                <span class="method-start">21 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">23 ms</span>
+                <span class="method-start">22 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testGettersAndSetters</span>
-                <span class="method-start">24 ms</span>
+                <span class="method-start">23 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">26 ms</span>
+                <span class="method-start">25 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">26 ms</span>
+                <span class="method-start">25 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSetNum</span>
-                <span class="method-start">27 ms</span>
+                <span class="method-start">26 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">27 ms</span>
+                <span class="method-start">26 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownAfterClass</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">26 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.TestPlayer</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpBeforeClass</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">27 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">27 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testGiveMoney</span>
-                <span class="method-start">29 ms</span>
+                <span class="method-start">28 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">29 ms</span>
+                <span class="method-start">28 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">29 ms</span>
+                <span class="method-start">28 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testMiscSettersAndGetters</span>
-                <span class="method-start">30 ms</span>
+                <span class="method-start">29 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">30 ms</span>
+                <span class="method-start">29 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">30 ms</span>
+                <span class="method-start">29 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testProperties</span>
-                <span class="method-start">30 ms</span>
+                <span class="method-start">29 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSetPlayerPos</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
@@ -916,162 +900,160 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSetTurnsLeftInJail</span>
-                <span class="method-start">32 ms</span>
+                <span class="method-start">31 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">32 ms</span>
+                <span class="method-start">31 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">32 ms</span>
+                <span class="method-start">31 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testTakeMoney</span>
                 <span class="method-start">32 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">138 ms</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">138 ms</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTurnsLeftInJail</span>
-                <span class="method-start">139 ms</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">139 ms</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownAfterClass</span>
-                <span class="method-start">139 ms</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.TestRailroadProperty</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpBeforeClass</span>
-                <span class="method-start">140 ms</span>
+                <span class="method-start">33 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">142 ms</span>
+                <span class="method-start">33 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testGetRent</span>
-                <span class="method-start">142 ms</span>
+                <span class="method-start">34 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">142 ms</span>
+                <span class="method-start">34 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">142 ms</span>
+                <span class="method-start">34 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testGettersAndSetters</span>
-                <span class="method-start">142 ms</span>
+                <span class="method-start">34 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">142 ms</span>
+                <span class="method-start">34 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownAfterClass</span>
-                <span class="method-start">143 ms</span>
+                <span class="method-start">34 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.TestSprite</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpBeforeClass</span>
-                <span class="method-start">143 ms</span>
+                <span class="method-start">35 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">143 ms</span>
+                <span class="method-start">37 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testMiscSettersAndGetters</span>
-                <span class="method-start">144 ms</span>
+                <span class="method-start">37 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">144 ms</span>
+                <span class="method-start">37 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">144 ms</span>
+                <span class="method-start">37 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testSpriteManipulation</span>
-                <span class="method-start">144 ms</span>
+                <span class="method-start">38 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">145 ms</span>
+                <span class="method-start">41 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownAfterClass</span>
-                <span class="method-start">145 ms</span>
+                <span class="method-start">41 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.TestStandardProperty</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpBeforeClass</span>
-                <span class="method-start">145 ms</span>
+                <span class="method-start">42 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">145 ms</span>
+                <span class="method-start">42 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testGettersAndSetters</span>
-                <span class="method-start">145 ms</span>
+                <span class="method-start">42 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">145 ms</span>
+                <span class="method-start">42 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">146 ms</span>
+                <span class="method-start">43 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testRent</span>
-                <span class="method-start">146 ms</span>
+                <span class="method-start">43 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">146 ms</span>
+                <span class="method-start">43 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">146 ms</span>
+                <span class="method-start">44 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testUpgradeAndDowngrade</span>
-                <span class="method-start">146 ms</span>
+                <span class="method-start">44 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">146 ms</span>
+                <span class="method-start">44 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownAfterClass</span>
-                <span class="method-start">147 ms</span>
+                <span class="method-start">44 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -1080,22 +1062,22 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">setUp</span>
-                <span class="method-start">147 ms</span>
+                <span class="method-start">45 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.PlayerTest2</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">148 ms</span>
+                <span class="method-start">47 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Property</span>
-                <span class="method-start">148 ms</span>
+                <span class="method-start">47 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">148 ms</span>
+                <span class="method-start">47 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

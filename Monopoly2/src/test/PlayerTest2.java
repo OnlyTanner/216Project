@@ -12,7 +12,7 @@ public class PlayerTest2 {
     @BeforeMethod
     public void setUp() {
         System.out.println("starting player testing");
-        play = new Player();
+        play = new Player((byte)0);
     }
 
     @AfterMethod

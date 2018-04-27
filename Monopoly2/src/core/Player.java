@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * Represents a single player on the board.
  */
 public class Player {
-	private String name;
+	private byte id;
 	private int playerPos;
 	private int money;
 	private int getOutOfJail;
@@ -16,18 +16,18 @@ public class Player {
 	private ArrayList<Property> properties;
 	private Sprite token;
 
-	public Player() {
+	public Player(byte id) {
 		playerPos =0;
 		money = 1000;
 		getOutOfJail = 0;
 		turnsLeftInJail =0;
 		stillInGame = true;
-
+        this.id = id;
 		properties = new ArrayList<>();
 	}
 
-	public Player(int tokenType) throws IOException {
-		this();
+	public Player(int tokenType, byte id) throws IOException {
+		this(id);
 		token = new Sprite("/resources/images/tokens/" + tokenType + ".png");
 	}
 
@@ -168,4 +168,13 @@ public class Player {
 	public ArrayList<Property> getProperties() {
 		return properties;
 	}
+
+    /**
+     * Returns the Player's ID
+     *
+     * @return id ID.
+     */
+    public byte getID() {
+        return id;
+    }
 }

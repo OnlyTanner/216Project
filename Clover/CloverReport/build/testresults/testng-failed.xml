@@ -19,15 +19,6 @@
           <include name="testGeterandSetters"/>
         </methods>
       </class> <!-- test.OneOpSpaceTest -->
-      <class name="test.TestPlayer">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="tearDownAfterClass"/>
-          <include name="testTakeMoney"/>
-          <include name="setUpBeforeClass"/>
-        </methods>
-      </class> <!-- test.TestPlayer -->
       <class name="test.TestCardSpace">
         <methods>
           <include name="setUp"/>

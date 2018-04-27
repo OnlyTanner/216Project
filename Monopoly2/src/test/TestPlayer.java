@@ -31,7 +31,7 @@ public class TestPlayer {
 
     @BeforeMethod
     public void setUp() throws IOException {
-        player1 = new Player(1);
+        player1 = new Player((byte) 1);
     }
 
     @AfterMethod

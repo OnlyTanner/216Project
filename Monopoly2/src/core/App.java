@@ -11,8 +11,8 @@ import java.io.IOException;
 public class App extends JFrame {
 
     // Window size in pixels
-    private static final int SCREEN_WIDTH = 800;
-    private static final int SCREEN_HEIGHT = 800;
+    public static final int SCREEN_WIDTH = 800;
+    public static final int SCREEN_HEIGHT = 800;
 
     // Desired framerate
     private static final double FPS = 60.0;
@@ -98,7 +98,7 @@ public class App extends JFrame {
             slowCnt++;
             if (slowCnt > 60) {
                 // Alert the user when the program consistently under-performs
-                System.out.println("Warning: Program is running slowly");
+                //System.out.println("Warning: Program is running slowly");
                 slowCnt = 0;
             }
 

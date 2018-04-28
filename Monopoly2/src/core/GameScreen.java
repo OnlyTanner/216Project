@@ -104,7 +104,7 @@ public class GameScreen {
         parent.addMouseListener(payRentButton);
 
         // Create the view player data button
-        viewPlayerDataButton = new Button(0, 0, 164, 80);
+        viewPlayerDataButton = new Button(0, 0, 160, 78);
         parent.addMouseListener(viewPlayerDataButton);
 
         viewPlayerDataButton.setRunnable(() -> {
@@ -126,6 +126,7 @@ public class GameScreen {
 
         playerDataWindow = new JFrame("Player Stats");
         playerDataWindow.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        playerDataWindow.setLocation(board.getX() + App.SCREEN_WIDTH * 2, board.getY() + App.SCREEN_HEIGHT / 4);
     }
 
     /**
@@ -456,6 +457,7 @@ public class GameScreen {
             JLabel p = new JLabel("--- Player " + players.get(i).getID() + " ---");
             p.setAlignmentX(Component.CENTER_ALIGNMENT);
             p.setFont(Resources.getFont("/resources/fonts/kabel.ttf").deriveFont(32.0f));
+            p.setForeground((i == currPlayer) ? new Color(20, 150, 10) : Color.black);
             panel.add(p);
 
             JLabel money = new JLabel("Money: $" + players.get(i).get_money());

@@ -355,6 +355,14 @@ public class Board {
         constructBoard();
     }
 
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
     /**
      * Fixes a board position so it wraps around the board if need be.
      * @param pos current position

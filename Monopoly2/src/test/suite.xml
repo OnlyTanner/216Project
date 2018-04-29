@@ -9,6 +9,7 @@
 			<class name="test.TestRailroadProperty"/>
 			<class name="test.TestSprite"/>
 			<class name="test.TestStandardProperty"/>
+			<class name="test.TestUtilityProperty"/>
 			<class name="test.OneOpSpaceTest"/>
 			<class name="test.PlayerTest2"/>
 		</classes>

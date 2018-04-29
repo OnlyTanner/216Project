@@ -153,6 +153,23 @@ public class GameScreen {
                 }
             } while(taken);
             chosenTokens.add(token);
+            //JFrame frame = new JFrame("Player " + (i + 1) + "Sprite Selection.");
+            //JPanel panel = new JPanel();
+            /*
+            for (int j = 0; j < 7; j++) {
+                Sprite img;
+                if (!chosenTokens.contains(j)) {
+                    img = new Sprite("/resources/images/tokens/" + j + ".png");
+                    img.setX(10);
+                    img.setY(10 + (img.getHeight() * j + 10));
+                    img.scale(4.0);
+                    img.draw(g, observer);
+
+                    Rectangle rec = new Rectangle(img.getX(), img.getY(), img.getWidth(), img.getHeight());
+                    rec.
+                }
+            }
+            */
             Player player = new Player(token, (byte)(i + 1));
             players.add(player);
         }

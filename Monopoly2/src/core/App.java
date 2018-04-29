@@ -66,7 +66,7 @@ public class App extends JFrame {
     }
 
     /**
-     * The main execution loop.
+     * The main execution loops
      */
     private void mainLoop() throws IOException, FontFormatException, InterruptedException {
         while(!RESET) {

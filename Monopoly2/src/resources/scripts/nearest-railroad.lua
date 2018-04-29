@@ -20,6 +20,10 @@ for i=1,4 do
     end
 end
 
+if nearestPos == -1	then
+	nearestPos = 2
+	end;
+
 player.setPlayerPos(player.currPlayer(), rr[nearestPos] + lastPos)
 if lastPos > player.getPlayerPos(player.currPlayer()) then
     -- The player passed Go

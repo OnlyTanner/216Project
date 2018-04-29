@@ -72,7 +72,8 @@ public class CardSpace implements BoardSpace {
 	 * If the deck is out of cards, it will automatically repeat the last order.
 	 * @return the drawn card
 	 */
-	public Card drawCard() {
+	public Card drawCard()  {
+
 		Card card = cards[drawOrder[drawPlace]];
 		drawPlace++;
 		if(drawPlace == drawOrder.length) {

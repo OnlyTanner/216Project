@@ -37,7 +37,7 @@ public class TestCardSpace {
     }
 
     @Test
-    public void testDrawCard(){
+    public void testDrawCard() {
         Assert.assertNotNull(space.drawCard());
     }
 

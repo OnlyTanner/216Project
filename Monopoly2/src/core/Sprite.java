@@ -105,6 +105,14 @@ public class Sprite {
         image = origImage;
     }
 
+    public Image getImage() {
+        return this.origImage;
+    }
+
+    public void setImage(Image img) {
+        this.origImage = img;
+    }
+
     /**
      * Draws the sprite on screen.
      * @param g graphics context

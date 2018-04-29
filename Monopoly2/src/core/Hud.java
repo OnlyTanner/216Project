@@ -38,7 +38,7 @@ public class Hud {
         g2d.setFont(font);
         FontMetrics fm = g2d.getFontMetrics();
         g.setFont(font);
-        g.setColor(Color.white);
+        g.setColor(player.getColor());
         ((Graphics2D) g).setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
 
         String playerIndicator = "Player " + playerNum;

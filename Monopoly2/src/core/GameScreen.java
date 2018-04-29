@@ -137,6 +137,13 @@ public class GameScreen {
      */
     public void init(int playerCnt, JFrame parent, Graphics g, ImageObserver observer) throws IOException, FontFormatException {
         ArrayList<Integer> chosenTokens = new ArrayList<>();
+
+        Color[] colors = new Color[4]; //default colors
+        colors[0] = Color.BLUE;
+        colors[1] = Color.RED;
+        colors[2] = Color.GREEN;
+        colors[3] = Color.YELLOW;
+
         Random random = new Random();
         // Create all the players
         for(int i=0; i<playerCnt; i++) {
@@ -153,24 +160,8 @@ public class GameScreen {
                 }
             } while(taken);
             chosenTokens.add(token);
-            //JFrame frame = new JFrame("Player " + (i + 1) + "Sprite Selection.");
-            //JPanel panel = new JPanel();
-            /*
-            for (int j = 0; j < 7; j++) {
-                Sprite img;
-                if (!chosenTokens.contains(j)) {
-                    img = new Sprite("/resources/images/tokens/" + j + ".png");
-                    img.setX(10);
-                    img.setY(10 + (img.getHeight() * j + 10));
-                    img.scale(4.0);
-                    img.draw(g, observer);
 
-                    Rectangle rec = new Rectangle(img.getX(), img.getY(), img.getWidth(), img.getHeight());
-                    rec.
-                }
-            }
-            */
-            Player player = new Player(token, (byte)(i + 1));
+            Player player = new Player(token, (byte)(i + 1), colors[i]);
             players.add(player);
         }
         viewPlayerDataButton.setActive(true);
@@ -281,6 +272,7 @@ public class GameScreen {
                         players.get(currPlayer).takeMoney(propertySpace.getProperty().getCost());
                         players.get(currPlayer).addProperty(propertySpace.getProperty());
                         Notification.notify("Player " + players.get(currPlayer).getID() + " bought " + propertySpace.getName() + "!");
+                        ((PropertySpace) space).setColor(players.get(currPlayer).getColor());
                         resetButtons();
                         rollButton.setActive(true);
                         board.zoomOut();
@@ -474,7 +466,7 @@ public class GameScreen {
             JLabel p = new JLabel("--- Player " + players.get(i).getID() + " ---");
             p.setAlignmentX(Component.CENTER_ALIGNMENT);
             p.setFont(Resources.getFont("/resources/fonts/kabel.ttf").deriveFont(32.0f));
-            p.setForeground((i == currPlayer) ? new Color(20, 150, 10) : Color.black);
+            p.setForeground((i == currPlayer) ? Color.WHITE : players.get(i).getColor());
             panel.add(p);
 
             JLabel money = new JLabel("Money: $" + players.get(i).get_money());

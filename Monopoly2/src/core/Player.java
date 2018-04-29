@@ -1,7 +1,10 @@
 package core;
 
+import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Represents a single player on the board.
@@ -15,8 +18,14 @@ public class Player {
 	private boolean stillInGame;
 	private ArrayList<Property> properties;
 	private Sprite token;
+	private Color color;
+	private static Random rand = new Random();
 
 	public Player(byte id) {
+		this(id, new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256)));
+	}
+
+	public Player(byte id, Color color) {
 		playerPos =0;
 		money = 1000;
 		getOutOfJail = 0;
@@ -24,11 +33,22 @@ public class Player {
 		stillInGame = true;
         this.id = id;
 		properties = new ArrayList<>();
+		this.color = color;
 	}
 
-	public Player(int tokenType, byte id) throws IOException {
-		this(id);
+	public Player(int tokenType, byte id, Color color) throws IOException {
+		this(id, color);
 		token = new Sprite("/resources/images/tokens/" + tokenType + ".png");
+
+		//Color player's piece
+		BufferedImage colorImg = new BufferedImage(token.getWidth(), token.getHeight(), BufferedImage.TYPE_INT_ARGB);
+		Graphics2D g = colorImg.createGraphics();
+		g.drawImage(token.getImage(), 0, 0, null);
+		g.setComposite(AlphaComposite.SrcAtop);
+		g.setColor(new Color(this.color.getRed(), this.color.getGreen(), this.color.getBlue(), 55));
+		g.fillRect(0, 0, token.getWidth(), token.getHeight());
+		g.dispose();
+		token.setImage(colorImg);
 	}
 
 	public Sprite getSprite() {
@@ -177,4 +197,8 @@ public class Player {
     public byte getID() {
         return id;
     }
+
+    public Color getColor() {
+		return color;
+	}
 }

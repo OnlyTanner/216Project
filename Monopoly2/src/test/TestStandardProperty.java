@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.awt.*;
 import java.io.IOException;
 
 public class TestStandardProperty {
@@ -50,7 +51,7 @@ public class TestStandardProperty {
     @Test
     public void testRent() {
         try {
-            Assert.assertEquals(prop.getRent(new Player(1, (byte)0), 4), 15);
+            Assert.assertEquals(prop.getRent(new Player(1, (byte)0, Color.BLACK), 4), 15);
         } catch (IOException e) {
             Assert.fail("Unexpected IOException.", e);
         }

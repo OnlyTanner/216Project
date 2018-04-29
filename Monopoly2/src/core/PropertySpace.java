@@ -20,12 +20,15 @@ public class PropertySpace implements BoardSpace, MouseListener {
 
 	private Ownership ownership;
 
+	private Color color;
+
 	/**
 	 * Constructs a new property space that refers to the given property.
 	 * @param property the property that this space represents
 	 */
 	public PropertySpace(Property property) {
 		this.property = property;
+		this.color = new Color(0, 0, 0, 0);
 	}
 
 	/**
@@ -61,16 +64,19 @@ public class PropertySpace implements BoardSpace, MouseListener {
 		sprite.draw(g, observer);
 		switch(ownership) {
 			case OWNED_BY_CURRENT_PLAYER:
-				g.setColor(Color.green);
+				g.setColor(color);
 				break;
 			case OWNED_BY_ANOTHER_PLAYER:
-				g.setColor(Color.red);
+				g.setColor(color);
 				break;
 			case UNOWNED:
 				g.setColor(new Color(0, 0, 0, 0));
 		}
 		((Graphics2D) g).setStroke(new BasicStroke(2.0f));
 		g.drawRect(sprite.getX(), sprite.getY(), sprite.getWidth(), sprite.getHeight());
+
+		if (ownership == Ownership.OWNED_BY_CURRENT_PLAYER)
+			PropertyOpMenu.setProperty(property);
 	}
 
 	/**
@@ -98,13 +104,7 @@ public class PropertySpace implements BoardSpace, MouseListener {
 	}
 
 	public void mouseClicked(MouseEvent e) {
-		int x = (int) e.getPoint().getX();
-		int y = (int) e.getPoint().getY();
-		// Check if the click was within the space
-		if(x > sprite.getX() && y > sprite.getY() &&
-				x < sprite.getX() + sprite.getWidth() && y < sprite.getY() + sprite.getHeight()) {
-			PropertyOpMenu.setProperty(property);
-		}
+
 	}
 
 	public void mouseEntered(MouseEvent e) {
@@ -115,4 +115,11 @@ public class PropertySpace implements BoardSpace, MouseListener {
 
 	}
 
+	public void setColor(Color color) {
+		this.color = color;
+	}
+
+	public Color getColor() {
+		return color;
+	}
 }

@@ -1,3 +1,3 @@
 local player = require("core.PlayerLuaLibrary")
 
-player.GiveMoney(player.currPlayer(), 50)
+player.giveMoney(player.currPlayer(), 50)

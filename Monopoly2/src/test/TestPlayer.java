@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.awt.*;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -31,7 +32,7 @@ public class TestPlayer {
 
     @BeforeMethod
     public void setUp() throws IOException {
-        player1 = new Player(1, (byte) 1);
+        player1 = new Player(1, (byte) 1, Color.BLACK);
     }
 
     @AfterMethod

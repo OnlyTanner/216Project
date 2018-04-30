@@ -28,7 +28,7 @@ The game is mostly functional, but there are a few issues and features missing. 
 
 ## Bugs To Be Fixed
 * Players don't always roll while in jail
-* No option to use a get out of jail card (always used by default)
+* Player's can recieve but cannot use a get out of jail free card
 * ~~Player's money amount isn't always updated right away in the GUI (sometimes it takes an extra turn)~~
 * ~~The game cannot be won in its current state~~
 * ~~Player's pieces and properties are not removed after they go bankrupt (in progress, mostly working)~~

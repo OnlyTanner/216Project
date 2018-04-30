@@ -41,6 +41,7 @@ public class GameScreen {
     private Button payRentButton;
     private Button viewPlayerDataButton;
     private Button instructionButton;
+    private Button getOutOfJailCardButton;
 
     private boolean showDie;
     private Die die1;
@@ -135,6 +136,14 @@ public class GameScreen {
                 e.printStackTrace();
             }
         });
+
+        // Create the Get Out Of Jail Card button
+        getOutOfJailCardButton = new Button("Jail Free Card");
+        getOutOfJailCardButton.setX(((screenWidth * 2) / 3) - (getOutOfJailCardButton.getWidth() / 2));
+        getOutOfJailCardButton.setY(((screenHeight * 2) / 3) - (getOutOfJailCardButton.getHeight() / 2));
+        getOutOfJailCardButton.setActive(false);
+        getOutOfJailCardButton.setRunnable(this::useGetOutOfJailFreeCard);
+        parent.addMouseListener(getOutOfJailCardButton);
 
         die1 = new Die();
         die1.setX((screenWidth / 2) - die1.getWidth() - 10);
@@ -233,6 +242,16 @@ public class GameScreen {
     }
 
     /**
+     *  Removes the player from jail and takes one Get Out Of Jail Free Card.
+     */
+    private void useGetOutOfJailFreeCard ()
+    {
+        players.get(currPlayer).setTurnsLeftInJail(0);
+        Notification.notify("Player " + players.get(currPlayer).getID() + " was released from jail!");
+        roll();
+    }
+
+    /**
      * Does the required tasks of the space the current player is on.
      */
     private void processSpace() {
@@ -257,9 +276,6 @@ public class GameScreen {
                 continueButton.setActive(true);
                 continueButton.setRunnable(() -> {
                     currCard = null;
-                    resetButtons();
-                    rollButton.setActive(true);
-                    board.zoomOut();
                     turnOver();
                 });
             });
@@ -282,18 +298,12 @@ public class GameScreen {
                         players.get(currPlayer).addProperty(propertySpace.getProperty());
                         Notification.notify("Player " + players.get(currPlayer).getID() + " bought " + propertySpace.getName() + "!");
                         ((PropertySpace) space).setColor(players.get(currPlayer).getColor());
-                        resetButtons();
-                        rollButton.setActive(true);
-                        board.zoomOut();
                         turnOver();
                     }
                 });
 
                 // Auction the property off to other players
                 auctionButton.setRunnable(() -> {
-                    resetButtons();
-                    rollButton.setActive(true);
-                    board.zoomOut();
                     turnOver();
                 });
             } else {
@@ -302,9 +312,6 @@ public class GameScreen {
                     continueButton.setActive(true);
 
                     continueButton.setRunnable(() -> {
-                        resetButtons();
-                        rollButton.setActive(true);
-                        board.zoomOut();
                         turnOver();
                     });
                 } else {
@@ -315,9 +322,6 @@ public class GameScreen {
                         players.get(currPlayer).takeMoney(rent * (DEBUG_MODE ? 200 : 1));
                         owner.giveMoney(rent);
                         removePlayers();
-                        resetButtons();
-                        rollButton.setActive(true);
-                        board.zoomOut();
                         turnOver();
                     });
                 }
@@ -330,9 +334,6 @@ public class GameScreen {
             // Run whatever event is appropriate, if any
             continueButton.setRunnable(() -> {
                 oneOpSpace.run(players.get(currPlayer));
-                resetButtons();
-                rollButton.setActive(true);
-                board.zoomOut();
                 turnOver();
             });
         }
@@ -362,12 +363,18 @@ public class GameScreen {
         auctionButton.setActive(false);
         continueButton.setActive(false);
         payRentButton.setActive(false);
+        getOutOfJailCardButton.setActive(false);
     }
 
     /**
      * Pass the turn off to the next player.
      */
     private void turnOver() {
+        resetButtons();
+        rollButton.setActive(true);
+        if(players.get(currPlayer).getTurnsLeftInJail() == 0 && players.get(currPlayer).getGetOutOfJailFreeCards() > 0) {
+            getOutOfJailCardButton.setActive(true);
+        }
         if (!repeatTurn) {
             currPlayer++;
             if (currPlayer >= players.size()) {
@@ -431,6 +438,7 @@ public class GameScreen {
         auctionButton.draw(g, observer);
         continueButton.draw(g, observer);
         payRentButton.draw(g, observer);
+        getOutOfJailCardButton.draw(g, observer);
 
         if(showDie) {
             die1.draw(g, observer);

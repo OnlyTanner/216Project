@@ -12,7 +12,8 @@ The game is mostly functional, but there are a few issues and features missing. 
   * To use this feature, click the blue player indicator box in the top left of the game window. A new window should open with all of the players in the game and info about their money and properties. The GUI is updated on the end of every turn.
 * ✅ Add an instruction/help screen -__DONE__
   * A new GUI element has been added to the bottom center of the main game screen. Clicking on it opens a new window that gives a brief explaination of the game, the GUI, and a link to supplimental information.
-* Allow Players to select their piece at the start of the game
+* ✅ Allow Players to select their piece at the start of the game -__DONE__
+  * When the user selects how many players they want in the game, a new GUI window opens and allows each player to choose what piece they want to play as. Players can select whatever pieces they want (including duplicates since they're all color coded), but everyone has to make a selection, otherwise you won't be allowed to continue into the game.
 * Fix/add the functionality to place houses and hotels on properties
   
 ## Bugs Fixed
@@ -40,5 +41,5 @@ The game is mostly functional, but there are a few issues and features missing. 
   * ~~"From sale of stock you get..." card takes away money from the player instead of giving them money~~
 * ~~The identification for each player in the GUI isn't accurate (_Player 2 can change to Player 1 if a player leaves. This bug was uncovered by fixing the bug that prevented bankrupted players from leaving the game_)~~
 * ~~ConcurrenctModificationExceptions are thrown randomly~~
-* ~~Property "Connecticut Avenue" is labeled 100$, but buying it takes 120$ from the player.~~
-* ~~Unmortgage does not require a 10% interest rate payment when the button is clicked
+* ~~Property "Connecticut Avenue" is labeled 100$, but buying it takes 120$ from the player~~
+* ~~Unmortgage does not require a 10% interest rate payment when the button is clicked~~

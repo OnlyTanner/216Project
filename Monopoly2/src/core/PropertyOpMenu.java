@@ -155,7 +155,7 @@ public class PropertyOpMenu {
                 Notification.notify("You don't have enough money!");
             } else {
                 property.setMortgaged(false);
-                player.takeMoney(property.getMortgageRate());
+                player.takeMoney((int) (property.getMortgageRate()*.10 + property.getMortgageRate()));
             }
         });
     }

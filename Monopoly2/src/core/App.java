@@ -126,7 +126,7 @@ public class App extends JFrame {
                 titleScreen.draw(g, this);
                 if(titleScreen.getFinished()) {
                     mode = Mode.GAME;
-                    gameScreen.init(titleScreen.getPlayerCnt(), this, g, this);
+                    gameScreen. init(titleScreen.getPlayerCnt(), this, g, this);
                 }
                 break;
             case GAME:

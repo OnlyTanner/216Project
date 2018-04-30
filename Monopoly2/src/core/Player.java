@@ -103,7 +103,6 @@ public class Player {
 			if (money < 0) {
 				money = 0;
 				stillInGame = false;
-				//Notification.notify("A player has been eliminated!");
 			}
 		}
 	}

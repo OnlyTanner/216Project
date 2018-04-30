@@ -74,9 +74,6 @@ public class PropertySpace implements BoardSpace, MouseListener {
 		}
 		((Graphics2D) g).setStroke(new BasicStroke(2.0f));
 		g.drawRect(sprite.getX(), sprite.getY(), sprite.getWidth(), sprite.getHeight());
-
-		if (ownership == Ownership.OWNED_BY_CURRENT_PLAYER)
-			PropertyOpMenu.setProperty(property);
 	}
 
 	/**
@@ -104,7 +101,13 @@ public class PropertySpace implements BoardSpace, MouseListener {
 	}
 
 	public void mouseClicked(MouseEvent e) {
-
+		int x = (int) e.getPoint().getX();
+		int y = (int) e.getPoint().getY();
+		// Check if the click was within the space
+		if(x > sprite.getX() && y > sprite.getY() &&
+				x < sprite.getX() + sprite.getWidth() && y < sprite.getY() + sprite.getHeight()) {
+			PropertyOpMenu.setProperty(property);
+		}
 	}
 
 	public void mouseEntered(MouseEvent e) {

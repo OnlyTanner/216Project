@@ -1,0 +1,64 @@
+<html>
+	<style>
+		li {
+			font-family: 'georgia';
+			font-size: 16;
+		}
+		h1 {
+			font-size: 44;
+			font-family: 'georgia';
+		}
+		h2 {
+			font-size: 28;
+			font-family: 'georgia';
+		}
+		p {
+			font-size: 16;
+			font-family: 'georgia';
+			padding-left: 35;
+		}
+		h6 {
+			font-size: 12;
+			font-family: 'georgia';
+			padding-left: 35;
+		}
+	</style>
+	<header>
+		<h1>Monopoly Instructions</h1>
+	</header>
+	<hr/>
+		<h2>- How To Play</h2>
+		<p>
+			To play the game, simply click the buttons on screen as<br/>
+			they appear in accordance with what action you want to<br/>
+			perform. The goal of the game is to maximize the number<br/>
+			of properties you own, as well as the amount of money you<br/>
+			have.
+		</p>
+		<br/>
+		<p>Read more about the rules below.</p>
+		<h6>- http://richard_wilding.tripod.com/monorules.htm</h6>
+		<h2>- Interacting With The GUI</h2>
+		<p>
+			The GUI has various elements that can be used to enhance<br/>
+			the experience that otherwise may not be super apparent.
+			<ul>
+				<li>
+					Click on the top left corner of the in-game window (where<br/>
+					it says "Player #") and a new GUI will appear. This 'Player<br/>
+					Stats' window gives more detailed information about each<br/>
+					player and the properties they own.
+				</li>
+				<br/>
+				<li>
+					When you own a property (which is indicated by the color<br/>
+					that matches the current player's color) you can left<br/>
+					click on it to display additional options including the<br/>
+					ability to mortage a property and add/remove upgrades<br/>
+					from each property. This menu is only accessable when<br/> 
+					the "Roll" button is on the screen.
+				</li>
+				<br/>
+			</ul>
+		</p>
+</html>

@@ -5,8 +5,10 @@ import org.json.JSONException;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.image.ImageObserver;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Vector;
@@ -35,6 +37,7 @@ public class GameScreen {
     private Button continueButton;
     private Button payRentButton;
     private Button viewPlayerDataButton;
+    private Button instructionButton;
 
     private boolean showDie;
     private Die die1;
@@ -48,7 +51,7 @@ public class GameScreen {
     private Graphics g;
     private ImageObserver observer;
 
-    private JFrame playerDataWindow;
+    private JFrame playerDataWindow, instructions;
 
     public GameScreen(JFrame parent, int screenWidth, int screenHeight) throws IOException, FontFormatException, JSONException {
         this.screenWidth = screenWidth;
@@ -106,10 +109,23 @@ public class GameScreen {
         // Create the view player data button
         viewPlayerDataButton = new Button(0, 0, 160, 78);
         parent.addMouseListener(viewPlayerDataButton);
-
         viewPlayerDataButton.setRunnable(() -> {
             try {
                 displayPlayerWindow();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (FontFormatException e) {
+                e.printStackTrace();
+            }
+        });
+
+        instructionButton = new Button((App.SCREEN_WIDTH / 2) - 106, App.SCREEN_HEIGHT - 39, 212, 39);
+        parent.addMouseListener(instructionButton);
+        instructionButton.setActive(true);
+        instructionButton.setRunnable(() -> {
+            try {
+                if (!instructions.isShowing())
+                    showInstructions();
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (FontFormatException e) {
@@ -127,6 +143,10 @@ public class GameScreen {
         playerDataWindow = new JFrame("Player Stats");
         playerDataWindow.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         playerDataWindow.setLocation(board.getX() + App.SCREEN_WIDTH * 2, board.getY() + App.SCREEN_HEIGHT / 4);
+
+        instructions = new JFrame("Instructions");
+        instructions.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        instructions.setLocation(board.getX(), board.getY());
     }
 
     /**
@@ -498,5 +518,26 @@ public class GameScreen {
         playerDataWindow.add(panel);
         playerDataWindow.pack();
         playerDataWindow.setVisible(true);
+    }
+
+    public void showInstructions() throws IOException, FontFormatException {
+        JPanel panel = new JPanel();
+
+        BufferedReader in = new BufferedReader(new FileReader("Monopoly2/src/resources/config/instructions.txt"));
+        String instr = "", line;
+        while ((line = in.readLine()) != null) {
+            instr += line;
+        }
+
+        JLabel label = new JLabel(instr);
+        panel.add(label);
+        panel.setBorder(new EmptyBorder(0, 15, 0, 15));
+        panel.setBackground(new Color(205, 230, 208));
+
+        instructions.add(panel);
+        instructions.setResizable(false);
+        instructions.pack();
+        instructions.setTitle("Instructions");
+        instructions.setVisible(true);
     }
 }

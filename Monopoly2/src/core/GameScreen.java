@@ -372,6 +372,7 @@ public class GameScreen {
     private void turnOver() {
         resetButtons();
         rollButton.setActive(true);
+        board.zoomOut();
         if(players.get(currPlayer).getTurnsLeftInJail() == 0 && players.get(currPlayer).getGetOutOfJailFreeCards() > 0) {
             getOutOfJailCardButton.setActive(true);
         }

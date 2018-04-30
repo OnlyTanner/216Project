@@ -18,7 +18,7 @@ public class PropertyOpMenu {
     private static Button sellUpgradeButton;
     private static Button mortgageButton;
     private static Button unMortgageButton;
-
+    private static Sprite sp;
     private static Property property;
     private static Player player;
 
@@ -58,7 +58,7 @@ public class PropertyOpMenu {
         PropertyOpMenu.player = player;
     }
 
-    public static void setProperty(Property property) {
+    public static void setProperty(Property property) throws IOException {
         if(!active) {
             // Don't set the property if the menu should not be active
             return;
@@ -97,6 +97,7 @@ public class PropertyOpMenu {
         text.setX((screenWidth / 2) - (text.getWidth() / 2));
         text.setY((screenHeight / 3) - (text.getHeight() * 3));
 
+
         buyUpgradeButton.setRunnable(() -> {
             if(!(property instanceof StandardProperty)) {
                 return;
@@ -107,9 +108,11 @@ public class PropertyOpMenu {
             if(standard.getNumUpgrades() < 4) {
                 if(player.get_money() < standard.getHouseCost()) {
                     Notification.notify("You cannot afford this upgrade!");
+
                 } else {
                     player.takeMoney(standard.getHouseCost());
                     standard.upgrade();
+
                 }
             } else if(standard.getNumUpgrades() == 4) {
                 if(player.get_money() < standard.getHotelCost()) {
@@ -170,6 +173,7 @@ public class PropertyOpMenu {
     public static void draw(Graphics g, ImageObserver observer) {
         if(property != null && text != null) {
             text.draw(g, observer);
+
             // If the property is a standard property, the user can upgrade it
             if(property instanceof StandardProperty) {
                 StandardProperty standard = (StandardProperty) property;
@@ -179,6 +183,7 @@ public class PropertyOpMenu {
                 if(standard.getNumUpgrades() > 0) {
                     sellUpgradeButton.draw(g, observer);
                     sellUpgradeButton.setActive(true);
+
                 } else {
                     sellUpgradeButton.setActive(false);
                 }

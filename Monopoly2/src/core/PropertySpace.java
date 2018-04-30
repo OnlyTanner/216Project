@@ -4,6 +4,7 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.ImageObserver;
+import java.io.IOException;
 
 /**
  * A space that contains a property of some type.
@@ -15,8 +16,9 @@ public class PropertySpace implements BoardSpace, MouseListener {
 	}
 
 	private Property property;
-
+	private StandardProperty st;
 	private Sprite sprite;
+
 
 	private Ownership ownership;
 
@@ -29,6 +31,8 @@ public class PropertySpace implements BoardSpace, MouseListener {
 	public PropertySpace(Property property) {
 		this.property = property;
 		this.color = new Color(0, 0, 0, 0);
+		if(property.getClass() != RailroadProperty.class && property.getClass() != UtilityProperty.class)
+		st = (StandardProperty) property;
 	}
 
 	/**
@@ -74,6 +78,11 @@ public class PropertySpace implements BoardSpace, MouseListener {
 		}
 		((Graphics2D) g).setStroke(new BasicStroke(2.0f));
 		g.drawRect(sprite.getX(), sprite.getY(), sprite.getWidth(), sprite.getHeight());
+		if(st != null)
+		for(int i = 1 ; i < st.getNumUpgrades()+6; i++) {
+			g.drawRect(sprite.getX(), sprite.getY(), sprite.getWidth() / 5 * i, sprite.getHeight()/4);
+
+		}
 	}
 
 	/**
@@ -106,7 +115,11 @@ public class PropertySpace implements BoardSpace, MouseListener {
 		// Check if the click was within the space
 		if(x > sprite.getX() && y > sprite.getY() &&
 				x < sprite.getX() + sprite.getWidth() && y < sprite.getY() + sprite.getHeight()) {
-			PropertyOpMenu.setProperty(property);
+			try {
+				PropertyOpMenu.setProperty(property);
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
 		}
 	}
 

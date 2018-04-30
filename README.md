@@ -27,10 +27,11 @@ The game is mostly functional, but there are a few issues and features missing. 
 * Player's money is always updated in the "Player Stats" menu after each turn.
 * Unmortage button now correctly charges a 10% interest rate when clicked 
 * Houses and hotels are now displayed (one rectangle box for each house and five for a hotel) and are correctly removed when selling houses as well 
+* Jail and Get out of Jail Free cards now function properly, and cards are now properly removed form the player's inventory when used. 
 
 ## Bugs To Be Fixed
-* Players don't always roll while in jail
-* Player's can recieve but cannot use a get out of jail free card
+* ~~Players don't always roll while in jail~~
+* ~~Player's can recieve but cannot use a get out of jail free card~~
 * ~~Player's money amount isn't always updated right away in the GUI (sometimes it takes an extra turn)~~
 * ~~The game cannot be won in its current state~~
 * ~~Player's pieces and properties are not removed after they go bankrupt (in progress, mostly working)~~

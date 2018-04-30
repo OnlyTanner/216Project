@@ -26,6 +26,7 @@ The game is mostly functional, but there are a few issues and features missing. 
 * Properties now charge the labeled amount when bought.
 * Player's money is always updated in the "Player Stats" menu after each turn.
 * Unmortage button now correctly charges a 10% interest rate when clicked 
+* Houses and hotels are now displayed (one rectangle box for each house and five for a hotel) and are correctly removed when selling houses as well 
 
 ## Bugs To Be Fixed
 * Players don't always roll while in jail
@@ -43,3 +44,4 @@ The game is mostly functional, but there are a few issues and features missing. 
 * ~~ConcurrenctModificationExceptions are thrown randomly~~
 * ~~Property "Connecticut Avenue" is labeled 100$, but buying it takes 120$ from the player~~
 * ~~Unmortgage does not require a 10% interest rate payment when the button is clicked~~
+* ~~Houses/Hotels are not shown and as a result there is no way to tell if a property has houses/a hoteal on it~~

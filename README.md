@@ -37,3 +37,4 @@ The game is mostly functional, but there are a few issues and features missing. 
   * ~~"From sale of stock you get..." card takes away money from the player instead of giving them money~~
 * ~~The identification for each player in the GUI isn't accurate (_Player 2 can change to Player 1 if a player leaves. This bug was uncovered by fixing the bug that prevented bankrupted players from leaving the game_)~~
 * ~~ConcurrenctModificationExceptions are thrown randomly~~
+* Property "Connecticut Avenue" is labeled 100$, but buying it takes 120$ from the player.

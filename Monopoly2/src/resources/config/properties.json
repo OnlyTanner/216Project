@@ -51,7 +51,7 @@
 		{
 			"name": "Connecticut Avenue",
 			"type": "property",
-			"cost": 120,
+			"cost": 100,
 			"color": "light blue",
 			"rents": [
 				8, 40, 100, 300, 450, 600

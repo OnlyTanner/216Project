@@ -22,6 +22,7 @@ The game is mostly functional, but there are a few issues and features missing. 
 * Players are now identified properly (added an ID field for each player which is reflected in the GUI)
 * Changed over to using Vectors to prevent concurrency related issues
 * All chance/community chest cards work as expected (see "Bugs To Be Fixed" list to see what cards were fixed)
+* Properties now charge the labeled amount when bought.
 
 ## Bugs To Be Fixed
 * Players don't always roll while in jail
@@ -37,4 +38,4 @@ The game is mostly functional, but there are a few issues and features missing. 
   * ~~"From sale of stock you get..." card takes away money from the player instead of giving them money~~
 * ~~The identification for each player in the GUI isn't accurate (_Player 2 can change to Player 1 if a player leaves. This bug was uncovered by fixing the bug that prevented bankrupted players from leaving the game_)~~
 * ~~ConcurrenctModificationExceptions are thrown randomly~~
-* Property "Connecticut Avenue" is labeled 100$, but buying it takes 120$ from the player.
+* ~~Property "Connecticut Avenue" is labeled 100$, but buying it takes 120$ from the player.~~

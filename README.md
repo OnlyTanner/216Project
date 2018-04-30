@@ -8,10 +8,12 @@ The game is mostly functional, but there are a few issues and features missing. 
 ## Enhancements
 * ✅ Color code Players and Properties -__DONE__
   * Players are given a fixed color at the start of every game. This is to help differentiate who owns what. The color is applied to each player's piece, the properties they own, as well as in the GUI and "Player Stats" screen.
+* ✅ Add a button that displays all of your opponents and properties -__DONE__
+  * To use this feature, click the blue player indicator box in the top left of the game window. A new window should open with all of the players in the game and info about their money and properties. The GUI is updated on the end of every turn.
+* ✅ Add an instruction/help screen -__DONE__
+  * A new GUI element has been added to the bottom center of the main game screen. Clicking on it opens a new window that gives a brief explaination of the game, the GUI, and a link to supplimental information.
 * Allow Players to select their piece at the start of the game
 * Fix/add the functionality to place houses and hotels on properties
-* ✅ Add a button that displays all of your opponents and properties -__DONE__
-  * To use this feature, click the blue player indicator box in the top left of the game window. A new window should open with all of the players in the game and info about their money and properties. The GUI is updated on the end of every turn
   
 ## Bugs Fixed
 * **Game can now be won**

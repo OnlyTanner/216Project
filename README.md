@@ -23,11 +23,12 @@ The game is mostly functional, but there are a few issues and features missing. 
 * Changed over to using Vectors to prevent concurrency related issues
 * All chance/community chest cards work as expected (see "Bugs To Be Fixed" list to see what cards were fixed)
 * Properties now charge the labeled amount when bought.
+* Player's money is always updated in the "Player Stats" menu after each turn.
 
 ## Bugs To Be Fixed
 * Players don't always roll while in jail
 * No option to use a get out of jail card (always used by default)
-* Player's money amount isn't always updated right away in the GUI (sometimes it takes an extra turn)
+* ~~Player's money amount isn't always updated right away in the GUI (sometimes it takes an extra turn)~~
 * ~~The game cannot be won in its current state~~
 * ~~Player's pieces and properties are not removed after they go bankrupt (in progress, mostly working)~~
 * ~~Various mutator methods don't do appropriate checks before changing instance variables~~

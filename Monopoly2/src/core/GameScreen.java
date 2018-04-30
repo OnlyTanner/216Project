@@ -530,12 +530,6 @@ public class GameScreen {
 
     public void showInstructions() throws IOException, FontFormatException {
         JPanel panel = new JPanel();
-/*
-        BufferedReader in = new BufferedReader(new FileReader("Monopoly2/src/resources/config/instructions.txt"));
-        String instr = "", line;
-        while ((line = in.readLine()) != null) {
-            instr += line;
-        }*/
 
         JEditorPane pane = new JEditorPane();
         pane.setPage(new File("Monopoly2/src/resources/config/instructions.html").toURI().toURL());

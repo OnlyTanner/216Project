@@ -211,20 +211,23 @@ public class TitleScreen {
         pieces.setBorder(new EmptyBorder(20, 20, 10, 20));
         frame.add(pieces, c3);
 
+        ArrayList<ArrayList<JRadioButton>> groups = new ArrayList<>();
         for (int i = 0; i < playerCnt; i++) {
             JLabel label = new JLabel("Player " + (i + 1) + " Selection");
             label.setBorder(BorderFactory.createEmptyBorder(0, 30, 0, 30));
             c2.gridx = i;
             c2.gridy = 0;
             selection.add(label, c2);
+            groups.add(i, new ArrayList<JRadioButton>());
 
             ButtonGroup group = new ButtonGroup();
             for (int j = 0; j < 8; j++) {
                 JRadioButton button = new JRadioButton((j + 1) + "");
                 button.setBackground(App.BACKGROUND_COLOR);
                 group.add(button);
+                groups.get(i).add(button);
                 button.setActionCommand(j + "");
-                button.addActionListener(e -> playerSprites.add(Integer.parseInt(e.getActionCommand())));
+                //button.addActionListener(e -> playerSprites.add(Integer.parseInt(e.getActionCommand())));
                 c2.gridy = j + 1;
                 selection.add(button, c2);
             }
@@ -238,10 +241,25 @@ public class TitleScreen {
         JPanel buttonPanel = new JPanel();
         java.awt.Button start = new java.awt.Button("Start");
         start.addActionListener((e) -> {
-            if (playerSprites.size() == playerCnt) {
+            ArrayList<JRadioButton> selectedButtons = new ArrayList<>();
+            for (ArrayList<JRadioButton> group : groups) {
+                for (JRadioButton b : group) {
+                    if (b.isSelected())
+                        selectedButtons.add(b);
+                }
+            }
+            if (selectedButtons.size() == playerCnt) {
+                for (int i = 0; i < playerCnt; i++) {
+                    playerSprites.add(Integer.parseInt(selectedButtons.get(i).getText()));
+                }
                 frame.dispose();
                 finished = true;
             }
+            /*
+            if (playerSprites.size() == playerCnt) {
+                frame.dispose();
+                finished = true;
+            }*/
         });
 
         start.setFont(Resources.getFont("/resources/fonts/kabel.ttf").deriveFont(32.0f));
@@ -255,6 +273,7 @@ public class TitleScreen {
 
         frame.setBackground(App.BACKGROUND_COLOR);
         frame.pack();
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
 

@@ -24,6 +24,7 @@ The game is mostly functional, but there are a few issues and features missing. 
 * All chance/community chest cards work as expected (see "Bugs To Be Fixed" list to see what cards were fixed)
 * Properties now charge the labeled amount when bought.
 * Player's money is always updated in the "Player Stats" menu after each turn.
+* Unmortage button now correctly charges a 10% interest rate when clicked 
 
 ## Bugs To Be Fixed
 * Players don't always roll while in jail
@@ -40,3 +41,4 @@ The game is mostly functional, but there are a few issues and features missing. 
 * ~~The identification for each player in the GUI isn't accurate (_Player 2 can change to Player 1 if a player leaves. This bug was uncovered by fixing the bug that prevented bankrupted players from leaving the game_)~~
 * ~~ConcurrenctModificationExceptions are thrown randomly~~
 * ~~Property "Connecticut Avenue" is labeled 100$, but buying it takes 120$ from the player.~~
+* ~~Unmortgage does not require a 10% interest rate payment when the button is clicked

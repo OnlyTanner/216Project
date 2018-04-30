@@ -151,7 +151,7 @@ public class PropertyOpMenu {
                 return;
             }
 
-            if(player.get_money() < property.getMortgageRate()) {
+            if(player.get_money() < property.getMortgageRate()*.10 + property.getMortgageRate()) {
                 Notification.notify("You don't have enough money!");
             } else {
                 property.setMortgaged(false);

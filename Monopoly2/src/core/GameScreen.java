@@ -4,11 +4,14 @@ import org.json.JSONException;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
+import javax.swing.event.HyperlinkEvent;
+import javax.swing.event.HyperlinkListener;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.ImageObserver;
 import java.io.*;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Vector;
@@ -491,24 +494,29 @@ public class GameScreen {
 
             JLabel money = new JLabel("Money: $" + players.get(i).get_money());
             money.setAlignmentX(Component.CENTER_ALIGNMENT);
-            money.setFont(Resources.getFont("/resources/fonts/roboto-bold.ttf").deriveFont(22.0f));
+            money.setFont(Resources.getFont("/resources/fonts/roboto-bold.ttf").deriveFont(18.0f));
             panel.add(money);
+
+            JLabel jail = new JLabel("Get Out of Jail Cards: " + players.get(i).getGetOutOfJailFreeCards());
+            jail.setAlignmentX(Component.CENTER_ALIGNMENT);
+            jail.setFont(Resources.getFont("/resources/fonts/roboto-bold.ttf").deriveFont(18.0f));
+            panel.add(jail);
 
             JLabel properties = new JLabel("Number of Properties: " + players.get(i).getProperties().size());
             properties.setAlignmentX(Component.CENTER_ALIGNMENT);
-            properties.setFont(Resources.getFont("/resources/fonts/roboto-bold.ttf").deriveFont(22.0f));
+            properties.setFont(Resources.getFont("/resources/fonts/roboto-bold.ttf").deriveFont(18.0f));
             panel.add(properties);
 
             JLabel ls = new JLabel("List of Properties...");
             ls.setAlignmentX(Component.CENTER_ALIGNMENT);
-            ls.setFont(Resources.getFont("/resources/fonts/roboto-bold.ttf").deriveFont(22.0f));
+            ls.setFont(Resources.getFont("/resources/fonts/roboto-bold.ttf").deriveFont(18.0f));
             panel.add(ls);
 
             for (int j = 0; j < players.get(i).getProperties().size(); j++) {
                 String list = players.get(i).getProperties().get(j).getName() + "\n";
                 JLabel propertiesList = new JLabel(list);
                 propertiesList.setAlignmentX(Component.CENTER_ALIGNMENT);
-                propertiesList.setFont(Resources.getFont("/resources/fonts/roboto-bold.ttf").deriveFont(16.0f));
+                propertiesList.setFont(Resources.getFont("/resources/fonts/roboto-bold.ttf").deriveFont(12.0f));
                 panel.add(propertiesList);
             }
 
@@ -522,16 +530,20 @@ public class GameScreen {
 
     public void showInstructions() throws IOException, FontFormatException {
         JPanel panel = new JPanel();
-
+/*
         BufferedReader in = new BufferedReader(new FileReader("Monopoly2/src/resources/config/instructions.txt"));
         String instr = "", line;
         while ((line = in.readLine()) != null) {
             instr += line;
-        }
+        }*/
 
-        JLabel label = new JLabel(instr);
-        panel.add(label);
-        panel.setBorder(new EmptyBorder(0, 15, 0, 15));
+        JEditorPane pane = new JEditorPane();
+        pane.setPage(new File("Monopoly2/src/resources/config/instructions.html").toURI().toURL());
+        pane.setEditable(false);
+        pane.setBorder(BorderFactory.createLineBorder(new Color(205, 230, 208)));
+
+        panel.add(pane);
+        //panel.setBorder(new EmptyBorder(0, 15, 0, 15));
         panel.setBackground(new Color(205, 230, 208));
 
         instructions.add(panel);

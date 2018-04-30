@@ -14,6 +14,8 @@ public class App extends JFrame {
     public static final int SCREEN_WIDTH = 800;
     public static final int SCREEN_HEIGHT = 800;
 
+    public static final Color BACKGROUND_COLOR = new Color(205, 230, 208);
+
     // Desired framerate
     private static final double FPS = 60.0;
 
@@ -118,7 +120,7 @@ public class App extends JFrame {
         Graphics2D g = (Graphics2D) bf.getDrawGraphics();
 
         // Clear the screen before drawing
-		g.setColor(new Color(205, 230, 208));
+		g.setColor(App.BACKGROUND_COLOR);
 		g.fillRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 
         switch(mode) {
@@ -126,7 +128,7 @@ public class App extends JFrame {
                 titleScreen.draw(g, this);
                 if(titleScreen.getFinished()) {
                     mode = Mode.GAME;
-                    gameScreen.init(titleScreen.getPlayerCnt(), this, g, this);
+                    gameScreen.init(titleScreen.getPlayerCnt(), this, g, this, titleScreen.getPlayerSprites());
                 }
                 break;
             case GAME:

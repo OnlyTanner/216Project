@@ -158,7 +158,7 @@ public class GameScreen {
      * @param parent the parent JFrame for user input
      * @throws IOException lack of resources. This should bubble up to the top
      */
-    public void init(int playerCnt, JFrame parent, Graphics g, ImageObserver observer) throws IOException, FontFormatException {
+    public void init(int playerCnt, JFrame parent, Graphics g, ImageObserver observer, Vector<Integer> playerSprites) throws IOException, FontFormatException {
         ArrayList<Integer> chosenTokens = new ArrayList<>();
 
         Color[] colors = new Color[4]; //default colors
@@ -170,21 +170,7 @@ public class GameScreen {
         Random random = new Random();
         // Create all the players
         for(int i=0; i<playerCnt; i++) {
-            // Assign a token, making sure that it is unique
-            int token;
-            boolean taken;
-            do {
-                taken = false;
-                token = random.nextInt(8);
-                for(int t : chosenTokens) {
-                    if(token == t) {
-                        taken = true;
-                    }
-                }
-            } while(taken);
-            chosenTokens.add(token);
-
-            Player player = new Player(token, (byte)(i + 1), colors[i]);
+            Player player = new Player(playerSprites.get(i), (byte)(i + 1), colors[i]);
             players.add(player);
         }
         viewPlayerDataButton.setActive(true);
@@ -483,7 +469,7 @@ public class GameScreen {
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         panel.setBorder(new EmptyBorder(15, 15, 15, 15));
-        panel.setBackground(new Color(205, 230, 208));
+        panel.setBackground(App.BACKGROUND_COLOR);
 
         for (int i = 0; i < players.size(); i++) {
             JLabel p = new JLabel("--- Player " + players.get(i).getID() + " ---");
@@ -534,11 +520,11 @@ public class GameScreen {
         JEditorPane pane = new JEditorPane();
         pane.setPage(new File("Monopoly2/src/resources/config/instructions.html").toURI().toURL());
         pane.setEditable(false);
-        pane.setBorder(BorderFactory.createLineBorder(new Color(205, 230, 208)));
+        pane.setBorder(BorderFactory.createLineBorder(App.BACKGROUND_COLOR));
 
         panel.add(pane);
         //panel.setBorder(new EmptyBorder(0, 15, 0, 15));
-        panel.setBackground(new Color(205, 230, 208));
+        panel.setBackground(App.BACKGROUND_COLOR);
 
         instructions.add(panel);
         instructions.setResizable(false);

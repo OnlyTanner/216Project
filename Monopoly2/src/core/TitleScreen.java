@@ -198,7 +198,7 @@ public class TitleScreen {
             c1.gridy = 0;
             pieces.add(label, c1);
 
-            BufferedImage img = ImageIO.read(new File("Monopoly2/src/resources/images/tokens/" + i + ".png"));
+            BufferedImage img = ImageIO.read(new File("src/resources/images/tokens/" + i + ".png"));
             label = new JLabel(new ImageIcon(img.getScaledInstance(100, 100, Image.SCALE_DEFAULT)));
             label.setSize(new Dimension(50, 50));
             c1.gridx = i;
@@ -218,16 +218,15 @@ public class TitleScreen {
             c2.gridx = i;
             c2.gridy = 0;
             selection.add(label, c2);
-            groups.add(i, new ArrayList<JRadioButton>());
+            groups.add(i, new ArrayList<>());
 
             ButtonGroup group = new ButtonGroup();
             for (int j = 0; j < 8; j++) {
-                JRadioButton button = new JRadioButton((j) + "");
+                JRadioButton button = new JRadioButton((j + 1) + "");
                 button.setBackground(App.BACKGROUND_COLOR);
                 group.add(button);
                 groups.get(i).add(button);
                 button.setActionCommand(j + "");
-                //button.addActionListener(e -> playerSprites.add(Integer.parseInt(e.getActionCommand())));
                 c2.gridy = j + 1;
                 selection.add(button, c2);
             }
@@ -250,16 +249,11 @@ public class TitleScreen {
             }
             if (selectedButtons.size() == playerCnt) {
                 for (int i = 0; i < playerCnt; i++) {
-                    playerSprites.add(Integer.parseInt(selectedButtons.get(i).getText()));
+                    playerSprites.add(Integer.parseInt(selectedButtons.get(i).getText()) - 1);
                 }
                 frame.dispose();
                 finished = true;
             }
-            /*
-            if (playerSprites.size() == playerCnt) {
-                frame.dispose();
-                finished = true;
-            }*/
         });
 
         start.setFont(Resources.getFont("/resources/fonts/kabel.ttf").deriveFont(32.0f));

@@ -248,7 +248,10 @@ public class GameScreen {
     {
         players.get(currPlayer).setTurnsLeftInJail(0);
         Notification.notify("Player " + players.get(currPlayer).getID() + " was released from jail!");
+        getOutOfJailCardButton.setActive(false);
         roll();
+        turnOver();
+
     }
 
     /**
@@ -373,7 +376,7 @@ public class GameScreen {
         resetButtons();
         rollButton.setActive(true);
         board.zoomOut();
-        if(players.get(currPlayer).getTurnsLeftInJail() == 0 && players.get(currPlayer).getGetOutOfJailFreeCards() > 0) {
+        if(players.get(currPlayer).getTurnsLeftInJail() != 0 && players.get(currPlayer).getGetOutOfJailFreeCards() > 0) {
             getOutOfJailCardButton.setActive(true);
         }
         if (!repeatTurn) {

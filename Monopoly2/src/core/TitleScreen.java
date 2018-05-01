@@ -222,7 +222,7 @@ public class TitleScreen {
 
             ButtonGroup group = new ButtonGroup();
             for (int j = 0; j < 8; j++) {
-                JRadioButton button = new JRadioButton((j + 1) + "");
+                JRadioButton button = new JRadioButton((j) + "");
                 button.setBackground(App.BACKGROUND_COLOR);
                 group.add(button);
                 groups.get(i).add(button);

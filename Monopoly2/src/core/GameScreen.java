@@ -66,12 +66,6 @@ public class GameScreen {
         BoardLuaLibrary.setBoard(board);
         players = new Vector<>();
 
-        //create instructions pane
-        instructions = new JFrame("Instructions");
-        instructions.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-        instructions.setLocation(board.getX(), board.getY());
-        createInstructionPane();
-
         // Initialize the heads up display
         hud = new Hud(screenWidth, screenHeight);
 
@@ -134,8 +128,14 @@ public class GameScreen {
         parent.addMouseListener(instructionButton);
         instructionButton.setActive(true);
         instructionButton.setRunnable(() -> {
-            if (!instructions.isShowing())
-                showInstructions();
+            try {
+                if (!instructions.isShowing())
+                    showInstructions();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (FontFormatException e) {
+                e.printStackTrace();
+            }
         });
 
         // Create the Get Out Of Jail Card button
@@ -156,6 +156,10 @@ public class GameScreen {
         playerDataWindow = new JFrame("Player Stats");
         playerDataWindow.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         playerDataWindow.setLocation(board.getX() + App.SCREEN_WIDTH * 2, board.getY() + App.SCREEN_HEIGHT / 4);
+
+        instructions = new JFrame("Instructions");
+        instructions.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        instructions.setLocation(board.getX(), board.getY());
     }
 
     /**
@@ -539,24 +543,22 @@ public class GameScreen {
         playerDataWindow.setVisible(true);
     }
 
-    public void createInstructionPane() throws IOException, FontFormatException {
+    public void showInstructions() throws IOException, FontFormatException {
         JPanel panel = new JPanel();
 
         JEditorPane pane = new JEditorPane();
-        pane.setPage(new File("src/resources/config/instructions.html").toURI().toURL());
+        pane.setPage(new File("Monopoly2/src/resources/config/instructions.html").toURI().toURL());
         pane.setEditable(false);
         pane.setBorder(BorderFactory.createLineBorder(App.BACKGROUND_COLOR));
 
         panel.add(pane);
+        //panel.setBorder(new EmptyBorder(0, 15, 0, 15));
         panel.setBackground(App.BACKGROUND_COLOR);
 
         instructions.add(panel);
         instructions.setResizable(false);
         instructions.pack();
         instructions.setTitle("Instructions");
-    }
-
-    public void showInstructions() {
         instructions.setVisible(true);
     }
 }

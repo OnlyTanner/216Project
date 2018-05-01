@@ -14,8 +14,8 @@ The game is mostly functional, but there are a few issues and features missing. 
   * A new GUI element has been added to the bottom center of the main game screen. Clicking on it opens a new window that gives a brief explaination of the game, the GUI, and a link to supplimental information.
 * ✅ Allow Players to select their piece at the start of the game -__DONE__
   * When the user selects how many players they want in the game, a new GUI window opens and allows each player to choose what piece they want to play as. Players can select whatever pieces they want (including duplicates since they're all color coded), but everyone has to make a selection, otherwise you won't be allowed to continue into the game.
-* Fix/add the functionality to place houses and hotels on properties
-* Houses and hotels are now displayed (one rectangle box for each house and five for a hotel) and are correctly removed when selling houses as well
+
+* ✅ Houses and hotels are now displayed (one rectangle box for each house and five for a hotel) and are correctly removed when selling houses as well - __DONE__
   
 ## Bugs Fixed
 * **Game can now be won**
@@ -45,4 +45,8 @@ The game is mostly functional, but there are a few issues and features missing. 
 * ~~ConcurrenctModificationExceptions are thrown randomly~~
 * ~~Property "Connecticut Avenue" is labeled 100$, but buying it takes 120$ from the player~~
 * ~~Unmortgage does not require a 10% interest rate payment when the button is clicked~~
+<<<<<<< HEAD
 
+=======
+* Rolling doubles 3 times in a row does not send the player to jail
+>>>>>>> 3510e19c024453189aefa2be079bf8f8774c2815

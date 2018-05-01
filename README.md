@@ -45,8 +45,4 @@ The game is mostly functional, but there are a few issues and features missing. 
 * ~~ConcurrenctModificationExceptions are thrown randomly~~
 * ~~Property "Connecticut Avenue" is labeled 100$, but buying it takes 120$ from the player~~
 * ~~Unmortgage does not require a 10% interest rate payment when the button is clicked~~
-<<<<<<< HEAD
-
-=======
 * Rolling doubles 3 times in a row does not send the player to jail
->>>>>>> 3510e19c024453189aefa2be079bf8f8774c2815

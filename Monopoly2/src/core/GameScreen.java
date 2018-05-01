@@ -26,6 +26,7 @@ public class GameScreen {
     private Vector<Player> players;
     private int currPlayer;
     private int moveAmount;
+    private int doublesThisTurn;
     private long lastMove;
     private int lastRoll;
     private int delayToZoom;
@@ -218,13 +219,28 @@ public class GameScreen {
 
         // Check if the player is in jail
         if(players.get(currPlayer).getTurnsLeftInJail() == 0) {
-            // Set the player ready to move
-            moveAmount = amount1 + amount2;
             if(amount1 == amount2) {
+                doublesThisTurn++;
                 repeatTurn = true;
+                if(doublesThisTurn >= 3){
+                    players.get(currPlayer).setTurnsLeftInJail(3);
+                    Notification.notify("Player " + players.get(currPlayer).getID() + " was sent to jail!");
+                    players.get(currPlayer).setPlayerPos(10);
+                    repeatTurn = false;
+                    delayToZoom = 100;
+                } else {
+                    // Set the player ready to move
+                    moveAmount = amount1 + amount2;
+                }
+            } else {
+                doublesThisTurn = 0;
+
+                // Set the player ready to move
+                moveAmount = amount1 + amount2;
             }
         } else {
             if(amount1 == amount2) {
+                doublesThisTurn++;
                 // Release the player if they rolled doubles
                 players.get(currPlayer).setTurnsLeftInJail(0);
                 Notification.notify("Player " + players.get(currPlayer).getID() + " was released from jail!");
@@ -381,6 +397,7 @@ public class GameScreen {
         }
         if (!repeatTurn) {
             currPlayer++;
+            doublesThisTurn = 0;
             if (currPlayer >= players.size()) {
                 currPlayer = 0;
             }

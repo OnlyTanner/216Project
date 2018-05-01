@@ -82,20 +82,20 @@ public class PropertySpace implements BoardSpace, MouseListener {
 		for(int i = 1 ; i < st.getNumUpgrades()+1; i++) {
 
 			if(sprite.getY() < 125) {
-				System.out.println("top");
+
 				g.drawRect(sprite.getX(), sprite.getHeight()+sprite.getY()/2, sprite.getWidth() / 5 * i, sprite.getHeight() / 4);
 			}
 			if(sprite.getY() > 650 ) {
-				System.out.println("bottom");
+
 				g.drawRect(sprite.getX(), sprite.getY(), sprite.getWidth() / 5 * i, sprite.getHeight() / 4);
 			}
 			if(sprite.getX() < 125) {
-				System.out.println("left");
+
 				g.drawRect(sprite.getWidth() + sprite.getX()/2, sprite.getY(), sprite.getWidth() / 4, sprite.getHeight() / 5 * i);
 			}
 			if(sprite.getX() > 650) {
-				System.out.println("right");
-				g.drawRect(sprite.getWidth()+sprite.getX()/2, sprite.getHeight()+sprite.getY()/2, sprite.getWidth() / 4, sprite.getHeight() / 5 * i);
+
+				g.drawRect(sprite.getX(), sprite.getY(), sprite.getWidth() / 4, sprite.getHeight() / 5 * i);
 			}
 		}
 	}
